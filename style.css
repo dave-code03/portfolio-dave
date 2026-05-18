@@ -542,3 +542,338 @@ footer{
     }
 }
 
+/* SMOOTH SCROLL */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* BODY GLOW */
+
+body::before{
+    content: "";
+
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    background:
+    radial-gradient(
+        #39ff14,
+        transparent 70%
+    );
+
+    top: -200px;
+    right: -150px;
+
+    opacity: 0.12;
+
+    z-index: -1;
+}
+
+body::after{
+    content: "";
+
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+
+    background:
+    radial-gradient(
+        #39ff14,
+        transparent 70%
+    );
+
+    bottom: -180px;
+    left: -120px;
+
+    opacity: 0.08;
+
+    z-index: -1;
+}
+
+/* IMAGE FLOAT */
+
+.image-card{
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-12px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* BUTTON GLOW */
+
+.btn-primary:hover{
+    box-shadow:
+    0 0 35px #39ff14,
+    0 0 80px rgba(0,255,100,0.4);
+}
+
+/* SOCIAL ROTATE */
+
+.social-icons a:hover{
+    transform:
+    translateY(-5px)
+    rotate(6deg);
+}
+
+/* CARD BORDER LIGHT */
+
+.card::before{
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 25px;
+
+    padding: 1px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,255,100,0.4),
+        transparent,
+        rgba(0,255,100,0.2)
+    );
+
+    -webkit-mask:
+    linear-gradient(#fff 0 0)
+    content-box,
+    linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    pointer-events: none;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #39ff14;
+
+    border-radius: 20px;
+}
+
+/* TEXT SELECTION */
+
+::selection{
+    background: #39ff14;
+    color: black;
+}
+
+/* CURSOR GLOW */
+
+body{
+    cursor: default;
+}
+
+/* IMAGE HOVER */
+
+.image-card:hover{
+    transform: scale(1.02);
+
+    transition: 0.4s;
+
+    box-shadow:
+    0 0 40px rgba(0,255,100,0.5),
+    0 0 100px rgba(0,255,100,0.2);
+}
+
+/* PROJECT IMAGE HOVER */
+
+.project img{
+    transition: 0.4s;
+}
+
+.project img:hover{
+    transform: scale(1.05);
+
+    box-shadow:
+    0 0 25px rgba(0,255,100,0.4);
+}
+
+/* NAVBAR FIXED */
+
+.navbar{
+    position: sticky;
+
+    top: 15px;
+
+    z-index: 999;
+}
+
+/* FADE IN */
+
+.hero,
+.cards,
+.contact{
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTTON CLICK */
+
+.btn:active{
+    transform: scale(0.96);
+}
+
+/* CONTACT HOVER */
+
+.contact-buttons a:hover i{
+    transform: rotate(10deg);
+
+    transition: 0.3s;
+}
+
+/* LOGO EFFECT */
+
+.logo{
+    transition: 0.3s;
+}
+
+.logo:hover{
+    text-shadow:
+    0 0 20px #39ff14,
+    0 0 40px #39ff14;
+}
+
+/* GLASS REFLECTION */
+
+.card,
+.navbar,
+.contact,
+.image-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.card::after,
+.navbar::after,
+.contact::after,
+.image-card::after{
+    content: "";
+
+    position: absolute;
+
+    top: -120%;
+    left: -40%;
+
+    width: 220px;
+    height: 300%;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.12),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    transition: 0.8s;
+}
+
+.card:hover::after,
+.navbar:hover::after,
+.contact:hover::after,
+.image-card:hover::after{
+    left: 130%;
+}
+
+/* PULSE GLOW */
+
+.active,
+.btn-primary{
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow{
+
+    0%{
+        box-shadow:
+        0 0 15px #39ff14;
+    }
+
+    50%{
+        box-shadow:
+        0 0 35px #39ff14,
+        0 0 70px rgba(0,255,100,0.4);
+    }
+
+    100%{
+        box-shadow:
+        0 0 15px #39ff14;
+    }
+}
+
+/* BACKGROUND PARTICLES STYLE */
+
+body{
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(0,255,100,0.08),
+        transparent 30%
+    ),
+    radial-gradient(
+        circle at bottom left,
+        rgba(0,255,100,0.05),
+        transparent 30%
+    ),
+    #050505;
+}
+
+/* ICON HOVER */
+
+.social-icons a:hover,
+.contact-buttons a:hover{
+    background:
+    rgba(0,255,100,0.08);
+}
+
+/* SMOOTH TRANSITIONS */
+
+*{
+    transition:
+    background 0.3s,
+    color 0.3s,
+    border 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
