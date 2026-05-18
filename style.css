@@ -1338,3 +1338,49 @@ footer{
 
     filter: blur(18px);
 }
+
+/* ========================= */
+/* PREMIUM BUTTON EFFECT */
+/* ========================= */
+
+.btn::before,
+.social-icons a::before,
+.contact-buttons a::before{
+    content: "";
+
+    position: absolute;
+
+    top: -120%;
+    left: -40%;
+
+    width: 220px;
+    height: 300%;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.18),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    transition: 0.8s;
+}
+
+.btn:hover::before,
+.social-icons a:hover::before,
+.contact-buttons a:hover::before{
+    left: 130%;
+}
+
+/* EXTRA HOVER */
+
+.btn:hover,
+.social-icons a:hover,
+.contact-buttons a:hover{
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 0 30px #39ff14,
+    0 0 80px rgba(0,255,100,0.35);
+}
