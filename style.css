@@ -1087,3 +1087,222 @@ footer{
     text-shadow:
     0 0 10px rgba(0,255,100,0.2);
 }
+
+/* ========================= */
+/* HERO LEFT / RIGHT FIX */
+/* ========================= */
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* ========================= */
+/* IMAGE CARD */
+/* ========================= */
+
+.image-card{
+    width: 430px;
+    height: 530px;
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(0,255,100,0.25);
+
+    background: rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+    0 0 40px rgba(0,255,100,0.18);
+
+    position: relative;
+}
+
+.image-card img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* ========================= */
+/* CODE BOX */
+/* ========================= */
+
+.code-box{
+    position: absolute;
+
+    left: -40px;
+    top: 60px;
+
+    background: rgba(0,0,0,0.75);
+
+    border: 1px solid rgba(0,255,100,0.25);
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 0 25px rgba(0,255,100,0.2);
+
+    font-family: monospace;
+
+    color: #39ff14;
+
+    line-height: 1.8;
+
+    z-index: 5;
+}
+
+.code-box p{
+    font-size: 15px;
+}
+
+/* ========================= */
+/* HERO TEXT */
+/* ========================= */
+
+.hero-left h1{
+    font-size: 95px;
+
+    line-height: 1.1;
+}
+
+.hero-left h1 span{
+    color: #39ff14;
+
+    text-shadow:
+    0 0 20px #39ff14;
+}
+
+.hero-left h2{
+    font-size: 42px;
+
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.hero-left .description{
+    font-size: 20px;
+
+    color: #bdbdbd;
+
+    max-width: 620px;
+
+    line-height: 1.9;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.hero-buttons .btn{
+    min-width: 220px;
+
+    justify-content: center;
+}
+
+/* ========================= */
+/* NAVBAR PREMIUM */
+/* ========================= */
+
+.navbar{
+    padding: 18px 40px;
+
+    border-radius: 22px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ========================= */
+/* HERO FULL HEIGHT */
+/* ========================= */
+
+.hero{
+    min-height: 100vh;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:950px){
+
+    .hero{
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-left h1{
+        font-size: 65px;
+    }
+
+    .hero-left h2{
+        font-size: 30px;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+
+    .code-box{
+        display: none;
+    }
+
+    .image-card{
+        width: 100%;
+        max-width: 420px;
+
+        height: auto;
+    }
+}
+
+/* ========================= */
+/* EXTRA CYBER GLOW */
+/* ========================= */
+
+.image-card::before{
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: 35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,255,100,0.4),
+        transparent,
+        rgba(0,255,100,0.2)
+    );
+
+    z-index: -1;
+
+    filter: blur(18px);
+}
