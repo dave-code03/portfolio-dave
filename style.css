@@ -63,7 +63,23 @@ box-shadow:0 0 20px #00ff66;
 /* HERO */
 
 header{
-padding:50px 20px;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.75),
+rgba(0,0,0,0.85)
+),
+
+url("images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
 .photo{
