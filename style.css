@@ -67,19 +67,25 @@ padding:50px 20px;
 }
 
 .photo{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #00ff66;
+width: 320px;
+height: 320px;
+object-fit: cover;
+border-radius: 20px;
 
-box-shadow:0 0 30px #00ff66;
+border: 4px solid #00ff88;
 
-cursor:pointer;
+box-shadow:
+0 0 20px #00ff88,
+0 0 40px #00ff88,
+0 0 80px #00ff88;
 
-transition:0.3s;
+margin-bottom: 30px;
 
-animation:glow 2s infinite alternate;
+transition: 0.4s;
+}
+
+.photo:hover{
+transform: scale(1.03);
 }
 
 .photo:hover{
@@ -126,7 +132,14 @@ color:#00ff66;
 /* HERO PREMIUM */
 
 .hero-content{
-padding:40px 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+min-height: 100vh;
+padding: 40px;
 }
 
 .green{
