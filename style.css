@@ -1,3 +1,15 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
 .hero{
 display:flex;
 justify-content:space-between;
@@ -24,7 +36,6 @@ font-size:90px;
 font-weight:900;
 line-height:1;
 margin-bottom:20px;
-color:white;
 }
 
 .hero-left h1 span{
@@ -35,7 +46,6 @@ text-shadow:0 0 25px #39ff14;
 .hero-left h2{
 font-size:45px;
 margin-bottom:25px;
-color:white;
 }
 
 .desc{
