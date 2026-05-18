@@ -877,3 +877,213 @@ body{
     box-shadow 0.3s;
 }
 
+/* NEON TITLE */
+
+.hero-text h1{
+    text-shadow:
+    0 0 15px rgba(0,255,100,0.5),
+    0 0 40px rgba(0,255,100,0.25);
+}
+
+/* DEV TEXT */
+
+.hero-text h1 strong,
+.hero-text span{
+    color: #39ff14;
+
+    text-shadow:
+    0 0 15px #39ff14,
+    0 0 35px rgba(0,255,100,0.4);
+}
+
+/* SUBTITLE */
+
+.hero-text h2{
+    color: #d8d8d8;
+}
+
+/* DESCRIPTION */
+
+.description{
+    max-width: 650px;
+}
+
+/* IMAGE CINEMATIC */
+
+.image-card img{
+    filter:
+    contrast(1.05)
+    saturate(1.05)
+    brightness(0.96);
+}
+
+/* IMAGE OVERLAY */
+
+.image-card::after{
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.45),
+        transparent 40%
+    );
+
+    pointer-events: none;
+}
+
+/* FLOATING CODE EFFECT */
+
+.code-box{
+    animation:
+    floatCode 5s ease-in-out infinite;
+}
+
+@keyframes floatCode{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* HERO SPACING */
+
+.hero{
+    padding-top: 30px;
+}
+
+/* EXTRA DEPTH */
+
+.card,
+.contact,
+.navbar{
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.45);
+}
+
+/* HERO BACKGROUND LIGHT */
+
+.hero::before{
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    background:
+    radial-gradient(
+        rgba(0,255,100,0.18),
+        transparent 70%
+    );
+
+    right: 5%;
+    top: 10%;
+
+    filter: blur(40px);
+
+    z-index: -1;
+}
+
+/* HERO POSITION */
+
+.hero{
+    position: relative;
+}
+
+/* NAVBAR HOVER */
+
+.nav-links a{
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0%;
+    height: 2px;
+
+    background: #39ff14;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+/* PROJECT CARD HOVER */
+
+.project{
+    transition: 0.3s;
+
+    padding: 12px;
+
+    border-radius: 18px;
+}
+
+.project:hover{
+    background:
+    rgba(255,255,255,0.03);
+}
+
+/* SERVICE CARD HOVER */
+
+.service{
+    transition: 0.3s;
+}
+
+.service:hover{
+    transform: translateX(8px);
+
+    border-left:
+    3px solid #39ff14;
+}
+
+/* SKILL BAR ANIMATION */
+
+.progress{
+    animation:
+    loadBar 2s ease;
+}
+
+@keyframes loadBar{
+
+    from{
+        width: 0;
+    }
+}
+
+/* FOOTER GLOW */
+
+footer{
+    border-top:
+    1px solid rgba(0,255,100,0.12);
+
+    padding-top: 25px;
+}
+
+/* CONTACT TITLE */
+
+.contact h3,
+.card h3{
+    text-shadow:
+    0 0 10px rgba(0,255,100,0.2);
+}
