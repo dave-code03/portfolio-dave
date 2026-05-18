@@ -154,13 +154,15 @@ align-items: center;
 text-align: center;
 background-image: url("images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png");
 background-size: cover;
-background-position: center;
+background-position: center top;
 background-repeat: no-repeat;
 background-blend-mode: darken;
 background-color: rgba(0,0,0,0.7);
 backdrop-filter: blur(3px);
+backdrop-filter: blur(2px);
 min-height: 100vh;
 padding: 40px; 20px;
+padding-top:120px;
 border-radius: 20px;
 }
 
