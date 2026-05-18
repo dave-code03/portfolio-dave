@@ -1,43 +1,55 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dave Dev</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-</head>
-
-<body>
-
 <!-- NAVBAR -->
 
 <nav class="navbar">
 
-<div class="logo">
-<i class="fa-solid fa-code"></i> Dave Dev
-</div>
+    <div class="logo">
+        <i class="fa-solid fa-code"></i>
+        <span>Dave Dev</span>
+    </div>
 
-<ul>
+    <ul class="nav-links">
 
-<li><a class="active" href="#">Home</a></li>
-<li><a href="#">Projects</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Skills</a></li>
-<li><a href="#">Contact</a></li>
+        <li>
+            <a class="active" href="#">
+                Home
+            </a>
+        </li>
 
-</ul>
+        <li>
+            <a href="#">
+                Projects
+            </a>
+        </li>
 
-<div class="moon">
-<i class="fa-solid fa-moon"></i>
-</div>
+        <li>
+            <a href="#">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                Services
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                Skills
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="moon">
+        <i class="fa-solid fa-moon"></i>
+    </div>
 
 </nav>
 
@@ -45,57 +57,75 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <section class="hero">
 
-<div class="hero-left">
+    <!-- LEFT -->
 
-<p class="hello">
-👋 Salut, moi c'est
-</p>
+    <div class="hero-left">
 
-<h1>
-Dave <span>Dev</span>
-</h1>
+        <p class="hello">
+            👋 Salut, moi c'est
+        </p>
 
-<h2>
-Développeur Web & <span>UI Designer</span>
-</h2>
+        <h1>
+            Dave <span>Dev</span>
+        </h1>
 
-<p class="desc">
-Je crée des sites web modernes, rapides et responsive
-avec du code propre et des designs uniques.
-</p>
+        <h2>
+            Développeur Web &
+            <span>UI Designer</span>
+        </h2>
 
-<div class="buttons">
+        <p class="desc">
+            Je crée des sites web modernes,
+            rapides et responsive avec du
+            code propre et des designs uniques.
+        </p>
 
-<a href="#" class="btn">
-Voir mes projets
-</a>
+        <!-- BUTTONS -->
 
-<a href="#" class="btn2">
-Me contacter
-<i class="fa-solid fa-paper-plane"></i>
-</a>
+        <div class="hero-buttons">
 
-</div>
+            <a href="#" class="btn">
+                Voir mes projets
+            </a>
 
-<div class="socials">
+            <a href="#" class="btn2">
+                Me contacter
+                <i class="fa-solid fa-paper-plane"></i>
+            </a>
 
-<a href="#"><i class="fab fa-github"></i></a>
+        </div>
 
-<a href="#"><i class="fab fa-linkedin"></i></a>
+        <!-- SOCIALS -->
 
-<a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="socials">
 
-<a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
 
-</div>
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-</div>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
 
-<div class="hero-right">
+            <a href="#">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
 
-<img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
+        </div>
 
-</div>
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="hero-right">
+
+        <img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
+
+    </div>
 
 </section>
 
@@ -103,128 +133,157 @@ Me contacter
 
 <section class="cards">
 
-<div class="card">
+    <!-- PROJECTS -->
 
-<h3>
-<i class="fa-solid fa-folder"></i>
-Projects
-</h3>
+    <div class="card">
 
-<div class="project">
+        <h3>
+            <i class="fa-solid fa-folder"></i>
+            Projects
+        </h3>
 
-<img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
+        <!-- PROJECT 1 -->
 
-<div>
+        <div class="project">
 
-<h4>Portfolio Website</h4>
+            <img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
 
-<p>
-Site personnel moderne créé avec HTML, CSS.
-</p>
+            <div class="project-info">
 
-<a href="#">Voir Projet</a>
+                <h4>
+                    Portfolio Website
+                </h4>
 
-</div>
+                <p>
+                    Site personnel moderne créé
+                    avec HTML, CSS.
+                </p>
 
-</div>
+                <a href="#">
+                    Voir Projet
+                </a>
 
-<div class="project">
+            </div>
 
-<img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
+        </div>
 
-<div>
+        <!-- PROJECT 2 -->
 
-<h4>Snake Game</h4>
+        <div class="project">
 
-<p>
-Jeu Snake créé avec JavaScript.
-</p>
+            <img src="images/4C8A790E-7BD0-4A0C-81D9-8EDF4D0E6BEB.png">
 
-<a href="#">Voir Projet</a>
+            <div class="project-info">
 
-</div>
+                <h4>
+                    Snake Game
+                </h4>
 
-</div>
+                <p>
+                    Jeu Snake créé avec JavaScript.
+                </p>
 
-</div>
+                <a href="#">
+                    Voir Projet
+                </a>
 
-<!-- SERVICES -->
+            </div>
 
-<div class="card">
+        </div>
 
-<h3>
-<i class="fa-solid fa-briefcase"></i>
-Services
-</h3>
+    </div>
 
-<div class="service">
-Création site web
-</div>
+    <!-- SERVICES -->
 
-<div class="service">
-UI / UX Design
-</div>
+    <div class="card">
 
-<div class="service">
-Refonte de site
-</div>
+        <h3>
+            <i class="fa-solid fa-briefcase"></i>
+            Services
+        </h3>
 
-<div class="service">
-Maintenance
-</div>
+        <div class="service">
+            Création site web
+        </div>
 
-</div>
+        <div class="service">
+            UI / UX Design
+        </div>
 
-<!-- SKILLS -->
+        <div class="service">
+            Refonte de site
+        </div>
 
-<div class="card">
+        <div class="service">
+            Maintenance
+        </div>
 
-<h3>
-<i class="fa-solid fa-code"></i>
-Skills
-</h3>
+    </div>
 
-<div class="skill">
+    <!-- SKILLS -->
 
-<p>HTML5 <span>95%</span></p>
+    <div class="card">
 
-<div class="bar">
-<div style="width:95%"></div>
-</div>
+        <h3>
+            <i class="fa-solid fa-code"></i>
+            Skills
+        </h3>
 
-</div>
+        <!-- SKILL -->
 
-<div class="skill">
+        <div class="skill">
 
-<p>CSS3 <span>90%</span></p>
+            <p>
+                HTML5
+                <span>95%</span>
+            </p>
 
-<div class="bar">
-<div style="width:90%"></div>
-</div>
+            <div class="bar">
+                <div style="width:95%"></div>
+            </div>
 
-</div>
+        </div>
 
-<div class="skill">
+        <div class="skill">
 
-<p>JavaScript <span>85%</span></p>
+            <p>
+                CSS3
+                <span>90%</span>
+            </p>
 
-<div class="bar">
-<div style="width:85%"></div>
-</div>
+            <div class="bar">
+                <div style="width:90%"></div>
+            </div>
 
-</div>
+        </div>
 
-<div class="skill">
+        <div class="skill">
 
-<p>Responsive Design <span>90%</span></p>
+            <p>
+                JavaScript
+                <span>85%</span>
+            </p>
 
-<div class="bar">
-<div style="width:90%"></div>
-</div>
+            <div class="bar">
+                <div style="width:85%"></div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+        <div class="skill">
+
+            <p>
+                Responsive Design
+                <span>90%</span>
+            </p>
+
+            <div class="bar">
+                <div style="width:90%"></div>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -232,40 +291,53 @@ Skills
 
 <section class="contact">
 
-<h3>
-<i class="fa-solid fa-paper-plane"></i>
-Contact
-</h3>
+    <h3>
+        <i class="fa-solid fa-paper-plane"></i>
+        Contact
+    </h3>
 
-<div class="contact-box">
+    <div class="contact-box">
 
-<a href="#">
-<i class="fab fa-whatsapp"></i>
-WhatsApp
-</a>
+        <a href="#">
 
-<a href="#">
-<i class="fab fa-facebook"></i>
-Facebook
-</a>
+            <i class="fab fa-whatsapp"></i>
 
-<a href="#">
-<i class="fab fa-instagram"></i>
-Instagram
-</a>
+            WhatsApp
 
-<a href="#">
-<i class="fab fa-tiktok"></i>
-TikTok
-</a>
+        </a>
 
-</div>
+        <a href="#">
+
+            <i class="fab fa-facebook"></i>
+
+            Facebook
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-instagram"></i>
+
+            Instagram
+
+        </a>
+
+        <a href="#">
+
+            <i class="fab fa-tiktok"></i>
+
+            TikTok
+
+        </a>
+
+    </div>
 
 </section>
 
-<footer>
-© 2026 Dave Dev • Tous droits réservés 💚
-</footer>
+<!-- FOOTER -->
 
-</body>
-</html>
+<footer>
+
+    © 2026 Dave Dev • Tous droits réservés 💚
+
+</footer>
