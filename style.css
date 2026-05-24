@@ -18,12 +18,12 @@ nav{
     justify-content: space-between;
     align-items: center;
 
-    padding: 25px 80px;
+    padding: 30px 80px;
 }
 
 nav h1{
     color: #d4a017;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 nav ul{
@@ -35,45 +35,57 @@ nav ul{
 
 nav ul li{
     cursor: pointer;
-    transition: 0.3s;
-}
-
-nav ul li:hover{
-    color: #d4a017;
 }
 
 
 
-/* HERO SECTION */
+/* HERO */
 
-section{
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 80px;
 }
 
-section p:first-child{
-    color: #d4a017;
-    margin-bottom: 20px;
+.left{
+    width: 50%;
 }
 
-section h1{
-    font-size: 85px;
-    line-height: 95px;
+.right{
+    width: 40%;
+}
+
+.mini-title{
+    color: #d4a017;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 2px;
+}
+
+.left h1{
+    font-size: 90px;
+
+    line-height: 100px;
 
     margin-bottom: 25px;
 }
 
-section h1 span{
+.left span{
     color: #d4a017;
 }
 
-section p{
-    font-size: 20px;
+.description{
     color: #ccc;
 
-    max-width: 600px;
-    line-height: 35px;
-}
+    font-size: 20px;
 
+    line-height: 35px;
+
+    margin-bottom: 35px;
+}
 
 
 /* BUTTONS */
@@ -81,33 +93,28 @@ section p{
 button{
     padding: 18px 35px;
 
-    margin-top: 35px;
-    margin-right: 20px;
-
     border: none;
-    border-radius: 8px;
+
+    border-radius: 10px;
 
     cursor: pointer;
 
-    font-size: 16px;
     font-weight: bold;
 
-    transition: 0.3s;
+    margin-right: 15px;
 }
 
-button:first-of-type{
+.btn1{
     background: #d4a017;
     color: black;
 }
 
-button:last-of-type{
+.btn2{
     background: transparent;
-    border: 1px solid white;
-    color: white;
-}
 
-button:hover{
-    transform: translateY(-5px);
+    border: 1px solid white;
+
+    color: white;
 }
 
 
@@ -115,32 +122,7 @@ button:hover{
 /* IMAGE */
 
 img{
-    width: 450px;
-
-    margin-top: 50px;
+    width: 100%;
 
     border-radius: 20px;
-}
-
-
-
-/* ABOUT SECTION */
-
-h2{
-    font-size: 45px;
-
-    margin-bottom: 25px;
-}
-
-div{
-    margin-top: 30px;
-}
-
-div h1{
-    color: #d4a017;
-    font-size: 50px;
-}
-
-div p{
-    color: #aaa;
 }
