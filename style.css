@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #050505;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* NAVBAR */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 80px;
+}
+
+nav h1{
+    color: #d4a017;
+    font-size: 32px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    color: #d4a017;
+}
+
+
+
+/* HERO SECTION */
+
+section{
+    padding: 80px;
+}
+
+section p:first-child{
+    color: #d4a017;
+    margin-bottom: 20px;
+}
+
+section h1{
+    font-size: 85px;
+    line-height: 95px;
+
+    margin-bottom: 25px;
+}
+
+section h1 span{
+    color: #d4a017;
+}
+
+section p{
+    font-size: 20px;
+    color: #ccc;
+
+    max-width: 600px;
+    line-height: 35px;
+}
+
+
+
+/* BUTTONS */
+
+button{
+    padding: 18px 35px;
+
+    margin-top: 35px;
+    margin-right: 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+button:first-of-type{
+    background: #d4a017;
+    color: black;
+}
+
+button:last-of-type{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+button:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* IMAGE */
+
+img{
+    width: 450px;
+
+    margin-top: 50px;
+
+    border-radius: 20px;
+}
+
+
+
+/* ABOUT SECTION */
+
+h2{
+    font-size: 45px;
+
+    margin-bottom: 25px;
+}
+
+div{
+    margin-top: 30px;
+}
+
+div h1{
+    color: #d4a017;
+    font-size: 50px;
+}
+
+div p{
+    color: #aaa;
+}
