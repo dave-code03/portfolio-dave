@@ -92,6 +92,49 @@ nav ul li:hover{
     margin-bottom: 35px;
 }
 
+/* HERO SECTION */
+
+section{
+
+    padding: 80px;
+
+}
+
+section p:first-child{
+
+    color: #d4a017;
+
+    margin-bottom: 20px;
+
+}
+
+section h1{
+
+    font-size: 85px;
+
+    line-height: 95px;
+
+    margin-bottom: 25px;
+
+}
+
+section h1 span{
+
+    color: #d4a017;
+
+}
+
+section p{
+
+    font-size: 20px;
+
+    color: #ccc;
+
+    max-width: 600px;
+
+    line-height: 35px;
+
+}
 
 /* BUTTONS */
 
