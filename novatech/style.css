@@ -50,17 +50,20 @@ header a {
 .cta a {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 14px 30px;
   background: white;
   color: #111827;
   border-radius: 8px;
   font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 
 .cta a:hover {
   background: #2563eb;
   color: white;
+  transform: translateY(-3px);
 }
 header a:hover {
   background: #2563eb;
