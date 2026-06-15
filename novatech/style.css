@@ -27,18 +27,19 @@ button {
   padding: 14px 30px;
   border: none;
   border-radius: 8px;
-  background: #2563eb;
-  color: white;
+  background: white;
+  color: #111827;
   font-size: 16px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 
 button:hover {
-  background: #1d4ed8;
+  background: #2563eb;
+  color: white;
   transform: translateY(-3px);
 }
-
 
 section {
   background: white;
