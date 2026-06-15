@@ -96,3 +96,12 @@ footer {
 .card:hover {
   transform: translateY(-5px);
 }
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
