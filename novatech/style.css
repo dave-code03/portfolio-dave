@@ -22,21 +22,21 @@ header p {
 }
 
 
-button {
+header a {
+  display: inline-block;
   margin-top: 25px;
   padding: 14px 30px;
-  border: none;
   border-radius: 8px;
   background: white;
   color: #111827;
   font-size: 16px;
-  cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 
-button:hover {
+header a:hover {
   background: #2563eb;
   color: white;
   transform: translateY(-3px);
