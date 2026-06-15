@@ -36,6 +36,32 @@ header a {
 }
 
 
+.cta {
+  background: #111827;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  color: white;
+}
+
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: white;
+  color: #111827;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+.cta a:hover {
+  background: #2563eb;
+  color: white;
+}
 header a:hover {
   background: #2563eb;
   color: white;
