@@ -44,23 +44,14 @@ url("images/IMG_0317.png");
 
 background-size: cover;
 background-position: center;
-
+  
 color: white;
-
-padding: 100px 20px;
+min-height: 80vh;
+padding: 80px 8%;
 display: flex;
 align-items: center;
 justify-content: center;
 
-}
-
-
-.right img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  max-width: 600px;
 }
 
 
@@ -108,6 +99,21 @@ button {
   color: white;
 }
 
+
+.btn1,
+.btn2 {
+  display: inline-block;
+  padding: 14px 25px;
+  margin-top: 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn1:hover,
+.btn2:hover {
+  transform: translateY(-3px);
+}
 
 .right {
   background: #111827;
@@ -162,11 +168,4 @@ nav ul {
   width: 100%;
 }
 
-}
-
-.right img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
 }
