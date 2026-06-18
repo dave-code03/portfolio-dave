@@ -194,7 +194,9 @@ margin-top:25px;
 
 
 .contact-links a {
-
+display: inline-block;
+background: #111827;
+color: white;
 background:#111827;
 color:white;
 padding:12px 20px;
