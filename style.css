@@ -341,12 +341,24 @@ grid-template-columns:repeat(3,1fr);
 
 gap:25px;
 
+padding:40px 8%;
+
 }
 
 
 .grid-section section {
 
 margin:0;
+
+background:#111827;
+
+border:1px solid #00ff88;
+
+border-radius:15px;
+
+padding:30px;
+
+box-shadow:0 0 15px rgba(0,255,136,0.35);
 
 }
 
