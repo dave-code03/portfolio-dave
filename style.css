@@ -181,3 +181,33 @@ justify-content:center;
 }
 
 }
+
+
+.contact-links {
+
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:25px;
+
+}
+
+
+.contact-links a {
+
+background:#111827;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+
+}
+
+
+.contact-links a:hover {
+
+background:#2563eb;
+transform:translateY(-3px);
+
+}
