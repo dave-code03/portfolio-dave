@@ -333,6 +333,45 @@ box-shadow:
 
 }
 
+
+.card-btn {
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#00ff88;
+
+color:#111827;
+
+font-weight:bold;
+
+border-radius:10px;
+
+text-decoration:none;
+
+transition:0.3s;
+
+}
+
+
+.card-btn:hover {
+
+background:#111827;
+
+color:#00ff88;
+
+border:1px solid #00ff88;
+
+box-shadow:0 0 15px #00ff88;
+
+transform:translateY(-3px);
+
+}
+
+
 .grid-section {
 
 display:grid;
@@ -350,7 +389,7 @@ padding:40px 8%;
 
 margin:0;
 
-background:#111827;
+background:#0b1220;
 
 border:1px solid #00ff88;
 
@@ -360,7 +399,19 @@ padding:30px;
 
 box-shadow:0 0 15px rgba(0,255,136,0.35);
 
+transition:0.3s;
+
 }
+
+
+.grid-section section:hover {
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px #00ff88;
+
+}
+
 
 #contact {
 
