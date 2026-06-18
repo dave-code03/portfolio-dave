@@ -332,3 +332,38 @@ box-shadow:
 0 0 10px rgba(0,255,136,0.25);
 
 }
+
+.grid-section {
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+padding:40px 8%;
+
+}
+
+
+.grid-section section {
+
+margin:0;
+
+}
+
+#contact {
+
+margin:40px 8%;
+
+}
+
+@media(max-width:768px){
+
+.grid-section{
+
+grid-template-columns:1fr;
+
+}
+
+}
