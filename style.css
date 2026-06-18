@@ -53,11 +53,11 @@ rgba(17,24,39,0.80)
 url("./images/IMG_0317.png");
 
 background-size: cover;
-background-position: center 50%;
+background-position: center 100%;
   
 color: white;
 min-height: 50vh;
-padding: 50px 10%;
+padding: 50px 15%;
 display: flex;
 align-items: center;
 justify-content: center;
