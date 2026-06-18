@@ -28,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #2563eb;
+  color: #00ff88;
 }
 
 nav h1 {
@@ -70,7 +70,7 @@ justify-content:center;
 
 
 .mini-title {
-  color: #2563eb;
+  color: #00ff88;
   font-weight: bold;
 }
 
@@ -82,7 +82,7 @@ justify-content:center;
 
 
 .hero span {
-  color: #2563eb;
+  color: #00ff88;
 }
 
 
@@ -93,15 +93,15 @@ justify-content:center;
 
 
 .btn1 {
-  background: #2563eb;
-  color: white;
+  background: #00ff88;
+  color: #111827;
 }
 
 
 .btn2 {
   margin-left: 10px;
   background: #111827;
-  color: white;
+  color: #00ff88;
 }
 
 
@@ -118,6 +118,7 @@ justify-content:center;
 .btn1:hover,
 .btn2:hover {
   transform: translateY(-3px);
+  box-shadow: 0 0 12px #00ff88;
 }
 
 .project-btn {
@@ -125,7 +126,7 @@ justify-content:center;
 display:inline-block;
 margin-top:15px;
 padding:12px 25px;
-background:#2563eb;
+background:#00ff88;
 color:white;
 border-radius:8px;
 text-decoration:none;
@@ -147,7 +148,7 @@ section {
 
 
 section h2 {
-  color: #2563eb;
+  color: #00ff88;
   margin-bottom: 20px;
 }
 
@@ -209,7 +210,7 @@ transition:0.3s;
 
 .contact-links a:hover {
 
-background:#2563eb;
+background:#00ff88;
 transform:translateY(-3px);
 
 }
