@@ -158,6 +158,12 @@ section {
 }
 
 
+section p {
+  color:white;
+  line-height:1.6;
+}
+
+
 section h2 {
   color: #00ff88;
   margin-bottom: 20px;
