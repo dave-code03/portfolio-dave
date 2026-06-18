@@ -47,8 +47,8 @@ nav ul {
 
 background:
 linear-gradient(
-rgba(17,24,39,0.70),
-rgba(17,24,39,0.70)
+rgba(17,24,39,0.80),
+rgba(17,24,39,0.80)
 ),
 url("./images/IMG_0317.png");
 
@@ -56,8 +56,8 @@ background-size: cover;
 background-position: center 50%;
   
 color: white;
-min-height: 80vh;
-padding: 80px 10%;
+min-height: 50vh;
+padding: 50px 10%;
 display: flex;
 align-items: center;
 justify-content: center;
