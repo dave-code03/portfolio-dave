@@ -20,25 +20,77 @@ nav {
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+
+display:block;
+
+padding:10px 15px;
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+border-radius:10px;
+
+color:white;
+
+text-decoration:none;
+
+transition:0.3s;
+
 }
+
 
 nav a:hover {
-  color: #00ff88;
+
+background:#00ff88;
+
+color:#111827;
+
+box-shadow:0 0 15px #00ff88;
+
+transform:translateY(-3px);
+
 }
 
+
+.theme-btn {
+
+background:#0b1220;
+
+color:#00ff88;
+
+border:1px solid #00ff88;
+
+padding:10px 15px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+.theme-btn:hover {
+
+background:#00ff88;
+
+color:#111827;
+
+box-shadow:0 0 15px #00ff88;
+
+}
+
+
 nav h1 {
-font-size:28px;
 color:#00ff88;
 }
 
 
 nav ul {
   display: flex;
-  gap: 25px;
+  gap: 15px;
   list-style: none;
 }
 
