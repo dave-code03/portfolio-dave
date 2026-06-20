@@ -514,3 +514,34 @@ margin:25px;
 }
 
 }
+
+.light{
+
+background:white;
+
+color:#111;
+
+}
+
+
+.light nav{
+
+background:white;
+
+}
+
+
+.light .card,
+.light .about,
+.light .contact{
+
+background:#f5f5f5;
+
+}
+
+
+.light p{
+
+color:#111;
+
+}
