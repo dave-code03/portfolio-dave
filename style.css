@@ -462,6 +462,99 @@ transition:.3s;
 
 }
 
+/* SOCIAL BRAND COLORS */
+
+
+.socials a:nth-child(1){
+
+border-color:#25D366;
+
+}
+
+
+.socials a:nth-child(1):hover{
+
+background:#25D366;
+
+color:white;
+
+box-shadow:0 0 20px #25D366;
+
+}
+
+
+.socials a:nth-child(2){
+
+border-color:#E1306C;
+
+}
+
+
+.socials a:nth-child(2):hover{
+
+background:#E1306C;
+
+color:white;
+
+box-shadow:0 0 20px #E1306C;
+
+}
+
+
+.socials a:nth-child(3){
+
+border-color:#ffffff;
+
+}
+
+
+.socials a:nth-child(3):hover{
+
+background:#ffffff;
+
+color:#050505;
+
+box-shadow:0 0 20px white;
+
+}
+
+
+.socials a:nth-child(4){
+
+border-color:#1877F2;
+
+}
+
+
+.socials a:nth-child(4):hover{
+
+background:#1877F2;
+
+color:white;
+
+box-shadow:0 0 20px #1877F2;
+
+}
+
+
+
+.socials a:nth-child(5){
+
+border-color:#00ff88;
+
+}
+
+
+.socials a:nth-child(5):hover{
+
+background:#00ff88;
+
+color:#050505;
+
+box-shadow:0 0 20px #00ff88;
+
+}
+
 
 .socials a:hover{
 
