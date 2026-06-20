@@ -133,7 +133,7 @@ gap:40px;
 
 .hero-image{
 
-width:55%;
+width:53%;
 
 display:flex;
 
@@ -143,9 +143,9 @@ justify-content:center;
 
 .hero-image img{
 
-width:120%;
+width:115%;
 
-max-width:750px;
+max-width:745px;
 
 display:block;
 
@@ -407,14 +407,15 @@ margin-top:20px;
 }
 
 
-.card:target{
+.about:target,
+.card:target,
+.contact:target{
 
 box-shadow:0 0 30px #00ff88;
 
 transform:translateY(-5px);
 
 }
-
 
 .about,
 .card,
@@ -594,6 +595,55 @@ color:#00ff88;
 
 }
 
+
+  .light{
+
+background:white;
+
+color:#111;
+
+}
+
+
+.light nav{
+
+background:white;
+
+}
+
+
+.light .hero{
+
+background:white;
+
+color:#111;
+
+}
+
+
+.light .hero p{
+
+color:#111;
+
+}
+
+
+.light h2{
+
+color:#00ff88;
+
+}
+
+
+.light footer{
+
+background:#050505;
+
+color:white;
+
+}
+
+  
 nav.scrolled{
 
 background:rgba(5,5,5,0.75);
