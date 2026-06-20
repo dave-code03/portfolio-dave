@@ -123,7 +123,7 @@ gap:40px;
 
 .hero-image{
 
-width:50%;
+width:60%;
 
 display:flex;
 
@@ -133,13 +133,11 @@ justify-content:center;
 
 .hero-image img{
 
-width:100%;
+width:130%;
 
-max-width:700px;
+max-width:760px;
 
 display:block;
-
-filter:none;
 
 }
 
