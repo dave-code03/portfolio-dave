@@ -406,7 +406,25 @@ margin-top:20px;
 
 }
 
-  
+
+.card:target{
+
+box-shadow:0 0 30px #00ff88;
+
+transform:translateY(-5px);
+
+}
+
+
+.about,
+.card,
+.contact{
+
+scroll-margin-top:100px;
+
+}
+
+
 /* CONTACT */
 
 .socials{
@@ -581,5 +599,12 @@ nav.scrolled{
 background:rgba(5,5,5,0.75);
 
 box-shadow:0 5px 20px rgba(0,255,136,.15);
+
+}
+
+
+html{
+
+scroll-behavior:smooth;
 
 }
