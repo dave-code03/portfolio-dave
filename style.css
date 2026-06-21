@@ -537,21 +537,38 @@ box-shadow:0 0 20px #1877F2;
 }
 
 
-
 .socials a:nth-child(5){
 
-border-color:#00ff88;
+border-color: red;
 
 }
 
 
 .socials a:nth-child(5):hover{
 
-background:#00ff88;
+background: red;
 
-color:#050505;
+color: white;
 
-box-shadow:0 0 20px #00ff88;
+box-shadow:0 0 20px red;
+
+}
+
+
+.socials a:nth-child(6){
+
+border-color: sky blue;
+
+}
+
+
+.socials a:nth-child(6):hover{
+
+background: sky blue;
+
+color: white;
+
+box-shadow:0 0 20px sky blue;
 
 }
 
