@@ -15,6 +15,49 @@ color:white;
 
 }
 
+.light{
+
+background:#ffffff;
+
+color:#111;
+
+}
+
+
+.light nav{
+
+background:#ffffff;
+
+}
+
+
+.light .hero{
+
+background:#ffffff;
+
+color:#111;
+
+}
+
+
+.light .card,
+.light .about,
+.light .contact{
+
+background:#f5f5f5;
+
+color:#111;
+
+}
+
+
+.light footer{
+
+background:#111;
+
+color:white;
+
+}
 
 /* NAVBAR */
 
@@ -641,115 +684,8 @@ grid-template-columns:1fr;
 }
 
 
-  /* LIGHT MODE CORRECTION */
 
 
-.light footer{
-
-background:#111;
-
-color:white;
-
-}
-
-
-.light .card,
-.light .about,
-.light .contact{
-
-background:white;
-
-border:1px solid #00ff88;
-
-color:#111;
-
-}
-
-
-.light .card p,
-.light .about p,
-.light .contact p{
-
-color:#111;
-
-}
-
-
-.light .card-btn{
-
-background:#00ff88;
-
-color:#050505;
-
-}
-
-
-.light nav a{
-
-background:white;
-
-color:#111;
-
-}
-
-
-.light .theme-btn{
-
-background:white;
-
-color:#00ff88;
-
-}
-
-
-  .light{
-
-background:white;
-
-color:#111;
-
-}
-
-
-.light nav{
-
-background:white;
-
-}
-
-
-.light .hero{
-
-background:white;
-
-color:#111;
-
-}
-
-
-.light .hero p{
-
-color:#111;
-
-}
-
-
-.light h2{
-
-color:#00ff88;
-
-}
-
-
-.light footer{
-
-background:#050505;
-
-color:white;
-
-}
-
-  
 nav.scrolled{
 
 background:rgba(5,5,5,0.75);
