@@ -1128,3 +1128,47 @@ flex-direction:column;
 
 
 }
+
+
+@media(max-width:768px){
+
+
+nav ul{
+
+display:none;
+
+flex-direction:column;
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+border-radius:15px;
+
+padding:15px;
+
+}
+
+
+nav ul.active{
+
+display:flex;
+
+}
+
+
+nav ul li{
+
+margin:5px 0;
+
+}
+
+
+.menu-icon{
+
+display:block;
+
+}
+
+
+}
