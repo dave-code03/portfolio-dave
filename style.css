@@ -805,3 +805,20 @@ transform:translateY(0);
 }
 
 }
+
+.light .services p,
+.light .card h3,
+.light .tech{
+
+color:#111;
+
+}
+
+
+.light .card h2,
+.light .contact h2,
+.light .about h2{
+
+color:#00cc77;
+
+}
