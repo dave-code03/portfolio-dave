@@ -498,30 +498,12 @@ transition:.3s;
 
 .socials a:nth-child(1){
 
-border-color:#25D366;
-
-}
-
-
-.socials a:nth-child(1):hover{
-
-background:#25D366;
-
-color:white;
-
-box-shadow:0 0 20px #25D366;
-
-}
-
-
-.socials a:nth-child(2){
-
 border-color:#E1306C;
 
 }
 
 
-.socials a:nth-child(2):hover{
+.socials a:nth-child(1):hover{
 
 background:#E1306C;
 
@@ -532,14 +514,14 @@ box-shadow:0 0 20px #E1306C;
 }
 
 
-.socials a:nth-child(3){
+.socials a:nth-child(2){
 
 border-color:#ffffff;
 
 }
 
 
-.socials a:nth-child(3):hover{
+.socials a:nth-child(2):hover{
 
 background:#ffffff;
 
@@ -550,14 +532,14 @@ box-shadow:0 0 20px white;
 }
 
 
-.socials a:nth-child(4){
+.socials a:nth-child(3){
 
 border-color:#1877F2;
 
 }
 
 
-.socials a:nth-child(4):hover{
+.socials a:nth-child(3):hover{
 
 background:#1877F2;
 
@@ -568,38 +550,20 @@ box-shadow:0 0 20px #1877F2;
 }
 
 
-.socials a:nth-child(5){
+.socials a:nth-child(4){
 
 border-color: red;
 
 }
 
 
-.socials a:nth-child(5):hover{
+.socials a:nth-child(4):hover{
 
 background: red;
 
 color: white;
 
 box-shadow:0 0 20px red;
-
-}
-
-
-.socials a:nth-child(6){
-
-border-color: sky blue;
-
-}
-
-
-.socials a:nth-child(6):hover{
-
-background: sky blue;
-
-color: white;
-
-box-shadow:0 0 20px sky blue;
 
 }
 
