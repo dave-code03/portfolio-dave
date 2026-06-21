@@ -406,6 +406,37 @@ margin-top:20px;
 }
 
 
+.project-item{
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+}
+
+
+.project-item img{
+
+width:120px;
+
+height:90px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+
+.tech{
+
+color:#00ff88;
+
+}
+
+
 .about:target,
 .card:target,
 .contact:target{
