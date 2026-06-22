@@ -1,10 +1,12 @@
 const themeBtn = document.querySelector(".theme-btn");
 
-themeBtn.addEventListener("click", () => {
+
+themeBtn.addEventListener("click",()=>{
 
 document.body.classList.toggle("light");
 
 });
+
 
 
 function setTheme(){
@@ -31,14 +33,6 @@ setTheme();
 
 
 
-button.addEventListener("click",()=>{
-
-document.body.classList.toggle("light");
-
-});
-
-
-
 const nav = document.querySelector("nav");
 
 
@@ -57,27 +51,5 @@ nav.classList.remove("scrolled");
 
 }
 
-
-});
-
-
-const menuIcon = document.querySelector(".menu-icon");
-
-const navLinks = document.querySelector(".nav-links");
-
-
-menuIcon.onclick = () => {
-
-navLinks.classList.toggle("active");
-
-};
-
-
-const navLinks = document.querySelector("nav ul");
-
-
-menuIcon.addEventListener("click",()=>{
-
-navLinks.classList.toggle("active");
 
 });
