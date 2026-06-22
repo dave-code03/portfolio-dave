@@ -1179,3 +1179,28 @@ display:block;
 display:flex;
 
 }
+
+  
+nav ul{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+
+nav a{
+
+font-size:14px;
+
+padding:8px 12px;
+
+}
+
+
+.theme-btn{
+
+margin-top:10px;
+
+}
