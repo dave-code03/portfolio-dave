@@ -819,17 +819,21 @@ cursor:pointer;
 }
 
 
-
 @media(max-width:768px){
-
 
 nav{
 
-flex-direction:column;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
 
-padding:15px;
+}
 
-gap:15px;
+
+nav h1{
+
+font-size:24px;
 
 }
 
@@ -843,11 +847,14 @@ display:block;
 
 .nav-links{
 
+position:absolute;
+top:70px;
+left:20px;
+right:20px;
+
 display:none;
-
 flex-direction:column;
-
-width:100%;
+align-items:center;
 
 background:#0b1220;
 
@@ -855,9 +862,7 @@ border:1px solid #00ff88;
 
 border-radius:15px;
 
-padding:15px;
-
-text-align:center;
+padding:20px;
 
 }
 
@@ -871,81 +876,24 @@ display:flex;
 
 .nav-links li{
 
-margin:8px 0;
-
-}
-
-
-nav a{
-
-font-size:14px;
-
-padding:8px 12px;
-
-}
-
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-padding:20px;
-
-}
-
-
-
-.hero{
-
-flex-direction:column;
-
-text-align:center;
-
-padding:40px 20px;
-
-}
-
-
-.hero-content,
-.hero-image{
-
 width:100%;
-
-}
-
-
-.hero-image img{
-
-width:100%;
-
-max-width:350px;
-
-}
-
-
-
-.card-btn,
-.btn-primary,
-.btn-secondary{
-
-width:100%;
-
 text-align:center;
 
 }
 
 
-.socials{
+.nav-links a{
 
-flex-direction:column;
+display:block;
+
+width:100%;
 
 }
 
 
-.socials a{
+.theme-btn{
 
-width:100%;
+margin:0;
 
 }
 
