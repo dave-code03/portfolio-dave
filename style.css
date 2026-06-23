@@ -1047,6 +1047,11 @@ margin-top:15px;
 
 }
 
+.theme-btn{
+
+margin-top:10px;
+
+}
 
 /* CONTACT */
 
@@ -1100,6 +1105,22 @@ display:block;
 }
 
 
+nav{
+
+flex-direction:column;
+
+}
+
+  
+nav a{
+
+font-size:14px;
+
+padding:8px 12px;
+
+}
+  
+
 .nav-links{
 
 display:none;
@@ -1120,87 +1141,11 @@ display:flex;
 }
 
 
-nav{
+.nav-links li{
 
-flex-direction:column;
-
-}
-
+margin:8px;
 
 }
 
-
-@media(max-width:768px){
-
-
-nav ul{
-
-display:none;
-
-flex-direction:column;
-
-background:#0b1220;
-
-border:1px solid #00ff88;
-
-border-radius:15px;
-
-padding:15px;
-
-}
-
-
-nav ul.active{
-
-display:flex;
-
-}
-
-
-nav ul li{
-
-margin:5px 0;
-
-}
-
-
-.menu-icon{
-
-display:block;
-
-}
-
-
-}
-
-
-.nav-links.active{
-
-display:flex;
-
-}
-
-  
-nav ul{
-
-width:100%;
-
-justify-content:center;
-
-}
-
-
-nav a{
-
-font-size:14px;
-
-padding:8px 12px;
-
-}
-
-
-.theme-btn{
-
-margin-top:10px;
 
 }
