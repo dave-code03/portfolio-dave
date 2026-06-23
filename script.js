@@ -9,10 +9,6 @@ document.body.classList.toggle("light");
 
 
 
-setTheme();
-
-
-
 const nav = document.querySelector("nav");
 
 
@@ -33,6 +29,7 @@ nav.classList.remove("scrolled");
 
 
 });
+
 
 
 const menuIcon = document.querySelector(".menu-icon");
