@@ -9,26 +9,6 @@ document.body.classList.toggle("light");
 
 
 
-function setTheme(){
-
-let hour = new Date().getHours();
-
-
-if(hour >= 7 && hour < 19){
-
-document.body.classList.add("light");
-
-}
-
-else{
-
-document.body.classList.remove("light");
-
-}
-
-}
-
-
 setTheme();
 
 
