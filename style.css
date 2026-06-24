@@ -899,3 +899,113 @@ margin:0;
 
 }
 
+
+/* BETTER LIGHT MODE */
+
+.light{
+
+background:#ffffff;
+color:#111;
+
+}
+
+
+.light nav{
+
+background:#ffffff;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+.light nav h1{
+
+color:#00cc77;
+
+}
+
+
+.light nav a{
+
+color:#111;
+background:#ffffff;
+
+}
+
+
+.light nav a:hover{
+
+background:#00ff88;
+color:#050505;
+
+}
+
+
+.light .hero{
+
+background:#ffffff;
+color:#111;
+
+}
+
+
+.light .hero p{
+
+color:#333;
+
+}
+
+
+.light .card,
+.light .about,
+.light .contact{
+
+background:#f8f8f8;
+color:#111;
+
+}
+
+
+.light .card p,
+.light .about p,
+.light .contact p{
+
+color:#333;
+
+}
+
+
+.light .skill p{
+
+color:#111;
+
+}
+
+
+.light .bar{
+
+background:#ddd;
+
+}
+
+
+.light .theme-btn{
+
+background:#ffffff;
+
+}
+
+
+.light .socials a{
+
+background:#ffffff;
+color:#111;
+
+}
+
+
+.light footer{
+
+background:#050505;
+
+}
