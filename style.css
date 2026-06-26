@@ -356,9 +356,9 @@ margin-bottom:20px;
 
 .cards{
 
-display:grid;
+display:flex;
 
-grid-template-columns:repeat(3,1fr);
+flex-direction:column;
 
 gap:25px;
 
@@ -1006,5 +1006,39 @@ color:#111;
 .light footer{
 
 background:#050505;
+
+}
+
+
+@media(max-width:768px){
+
+.cards{
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+.card{
+
+width:100%;
+
+}
+
+
+nav{
+
+position:sticky;
+top:0;
+
+}
+
+
+.hero{
+
+width:100%;
+
+}
 
 }
