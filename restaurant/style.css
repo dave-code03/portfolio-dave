@@ -16,3 +16,46 @@ font-family:Arial, sans-serif;
 background:#FFF8E7;
 
 }
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:80px 8%;
+
+min-height:100vh;
+
+}
+
+
+.hero-text{
+
+width:60%;
+
+}
+
+
+.hero-image{
+
+width:40%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+.hero-image img{
+
+width:100%;
+
+max-width:500px;
+
+border-radius:20px;
+
+}
