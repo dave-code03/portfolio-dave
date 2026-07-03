@@ -797,6 +797,24 @@ font-size:38px;
 
 }
 
+.menu-toggle{
+
+display:block;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.order-btn{
+
+display:none;
+
+}
+  
 }
 
 /* ===== ANIMATIONS ===== */
@@ -864,5 +882,16 @@ animation:fadeUp .8s ease;
 .about-image{
 
 animation:fadeUp .8s ease;
+
+}
+
+/* ===== HAMBURGER ===== */
+
+.menu-toggle{
+
+display:none;
+font-size:30px;
+cursor:pointer;
+color:#222;
 
 }
