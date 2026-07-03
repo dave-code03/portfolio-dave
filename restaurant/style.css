@@ -110,7 +110,7 @@ flex:1;
 flex:1;
 display:flex;
 justify-content:center;
-
+transition:.4s;
 }
 
 .hero-image img{
@@ -119,7 +119,7 @@ width:100%;
 max-width:600px;
 border-radius:25px;
 box-shadow:0 20px 40px rgba(0,0,0,.25);
-
+transform:scale(1.05);
 }
 
 .hero h4{
@@ -177,7 +177,8 @@ color:white;
 .btn-primary:hover{
 
 background:#e85b25;
-
+transform:translateY(-4px);
+  
 }
 
 .btn-secondary{
@@ -191,8 +192,11 @@ color:#ff6b35;
 
 background:#ff6b35;
 color:white;
-
+transform:translateY(-4px);
+  
 }
+
+
 
 /* ===== MENU ===== */
 
@@ -242,7 +246,7 @@ transition:.35s;
 
 .food-card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-12px) scale(1.03);
 
 }
 
@@ -295,7 +299,8 @@ transition:.3s;
 .card-btn:hover{
 
 background:#222;
-
+transform:translateY(-4px);
+  
 }
 
 /* ===== ABOUT ===== */
@@ -450,7 +455,7 @@ transition:.35s;
 
 .feature-box:hover{
 
-transform:translateY(-12px);
+transform:translateY(-12px) scale(1.03);
 
 }
 
@@ -533,7 +538,7 @@ transition:.35s;
 
 .review-card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-12px) scale(1.03);
 
 }
 
@@ -615,7 +620,7 @@ transition:.35s;
 
 .chef-card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-12px) scale(1.03);
 
 }
 
@@ -791,5 +796,73 @@ flex-direction:column;
 font-size:38px;
 
 }
+
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.hero-text{
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero-image{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.food-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.feature-box{
+
+animation:fadeUp .8s ease;
+
+}
+
+.review-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.chef-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.about-text{
+
+animation:fadeUp .8s ease;
+
+}
+
+.about-image{
+
+animation:fadeUp .8s ease;
 
 }
