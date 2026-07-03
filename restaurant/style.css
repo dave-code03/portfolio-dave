@@ -710,10 +710,17 @@ padding:20px 8%;
 
 .menu-toggle{
 
-display:block;
-font-size:30px;
+display:block !important;
+
+font-size:35px;
+
+color:red;
+
 cursor:pointer;
-color:#222;
+
+border:3px solid blue;
+
+padding:10px;
 
 }
 
