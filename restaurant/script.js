@@ -1,3 +1,7 @@
+window.onload = () => {
+    window.scrollTo(0, 0);
+};
+
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
