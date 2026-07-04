@@ -1482,3 +1482,9 @@ transform:scale(1.08);
 color:#e85b25;
 
 }
+
+nav ul li a.active{
+
+color:#ff6b35;
+
+}
