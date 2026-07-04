@@ -950,6 +950,12 @@ align-items:center;
 width:100%;
 
 }
+
+.stats{
+
+flex-direction:column;
+
+}
   
 }
 
