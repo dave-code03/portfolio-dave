@@ -770,7 +770,6 @@ padding:30px;
 
 }
 
-
 /* ===== RESPONSIVE ===== */
 
 @media (max-width:768px){
@@ -957,58 +956,18 @@ flex-direction:column;
 
 }
 
-/* ===== CTA ===== */
+ .cta h2{
 
-.cta{
-
-padding:100px 8%;
-
-text-align:center;
-
-background:linear-gradient(135deg,#ff6b35,#ff914d);
-
-color:white;
-
-}
-
-.cta h2{
-
-font-size:48px;
-
-margin-bottom:20px;
+font-size:36px;
 
 }
 
 .cta p{
 
-font-size:20px;
+font-size:17px;
 
-max-width:700px;
-
-margin:0 auto 40px;
-
-line-height:1.8;
-
-}
-
-.cta .btn-primary{
-
-background:white;
-
-color:#ff6b35;
-
-}
-
-.cta .btn-primary:hover{
-
-background:#222;
-
-color:white;
-
-}
+} 
   
-}
-
 /* ===== ANIMATIONS ===== */
 
 @keyframes fadeUp{
@@ -1445,6 +1404,7 @@ margin-bottom:20px;
 
 }
 
+  
 .cta p{
 
 font-size:20px;
@@ -1466,8 +1426,16 @@ color:#ff6b35;
 }
 
 .cta .btn-primary:hover{
-
+  
 background:#222;
+  
+color:white;
+  
+}
+
+::selection{
+
+background:#ff6b35;
 
 color:white;
 
