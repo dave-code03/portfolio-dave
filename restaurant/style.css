@@ -841,6 +841,20 @@ font-size:38px;
 
 }
 
+.footer-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+  
 }
 
 /* ===== ANIMATIONS ===== */
