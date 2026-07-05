@@ -1,8 +1,8 @@
 :root{
 
---primary:#ff6b35;
+--primary:var(--primary)
 
---secondary:#222;
+--secondary:var(--secondary)
 
 --light:#FFF8E7;
 
