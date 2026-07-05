@@ -1,19 +1,3 @@
-window.onload = () => {
-
-    window.scrollTo(0,0);
-
-    const loader = document.getElementById("loader");
-
-    loader.style.opacity = "0";
-
-    setTimeout(() => {
-
-        loader.style.display = "none";
-
-    },600);
-
-};
-
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
@@ -107,3 +91,29 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+window.addEventListener("load", () => {
+
+    history.replaceState(null, null, " ");
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant"
+    });
+
+    const loader = document.getElementById("loader");
+
+    if(loader){
+
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        },600);
+
+    }
+
+});
