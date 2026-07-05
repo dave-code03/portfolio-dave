@@ -1,3 +1,17 @@
+:root{
+
+--primary:#ff6b35;
+
+--secondary:#222;
+
+--light:#FFF8E7;
+
+--white:#ffffff;
+
+--gray:#666;
+
+}
+
 /* ===== RESET ===== */
 
 *{
@@ -12,8 +26,10 @@ scroll-behavior:smooth;
 
 body{
 
-font-family:Arial,sans-serif;
+font-family:"Poppins",sans-serif;
+
 background:#FFF8E7;
+
 color:#222;
 
 }
