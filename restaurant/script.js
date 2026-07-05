@@ -1,3 +1,19 @@
+window.onload = () => {
+
+    window.scrollTo(0,0);
+
+    const loader = document.getElementById("loader");
+
+    loader.style.opacity = "0";
+
+    setTimeout(() => {
+
+        loader.style.display = "none";
+
+    },600);
+
+};
+
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
