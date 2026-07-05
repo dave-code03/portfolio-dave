@@ -1,7 +1,3 @@
-window.onload = () => {
-    window.scrollTo(0, 0);
-};
-
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
@@ -32,6 +28,7 @@ const backToTop = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll",()=>{
 
+    
     if(window.scrollY>300){
 
         backToTop.classList.add("show");
@@ -76,3 +73,21 @@ link.classList.add("active");
 });
 
 });
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
