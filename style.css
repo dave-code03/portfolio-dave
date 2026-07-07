@@ -334,11 +334,14 @@ h2{
 /* ========================================= */
 /*             PROJECTS ITEMS                */
 /* ========================================= */
+#projects{
+
+    grid-column:span 1;
 
 .project-item{
     display:flex;
-    align-items:center;
     gap:20px;
+    align-items:flex-start;
     margin-bottom:35px;
 }
 
