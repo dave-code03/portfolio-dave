@@ -340,6 +340,7 @@ h2{
     display:flex;
     align-items:center;
     gap:20px;
+    margin-bottom:35px;
 }
 
 .project-item img{
@@ -763,11 +764,29 @@ nav.scrolled{
     .project-item{
         flex-direction:column;
         text-align:center;
+        gap:15px;
     }
 
     .project-item img{
         width:100%;
         height:auto;
+        max-width:320px;
     }
+
+    .project-item div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.card-btn{
+
+    margin-top:15px;
+
+}
 
 }
