@@ -17,8 +17,11 @@ body{
     background:#050505;
     color:#ffffff;
     line-height:1.6;
-    transition:.35s ease;
     overflow-x:hidden;
+    
+    transition:
+    background .35s ease,
+    color .35s ease;
 }
 
 /* ========================================= */
@@ -151,7 +154,7 @@ nav a:hover{
 .hero-image img{
     width:100%;
     max-width:650px;
-
+    object-fit:cover;
     display:block;
 
     border-radius:25px;
@@ -309,7 +312,7 @@ h2{
     display:grid;
     grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
+    gap:15px;
 
     padding:40px 8%;
 }
@@ -748,6 +751,23 @@ nav.scrolled{
 
     .card{
         width:100%;
+    }
+
+    nav{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    }
+
+    .project-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .project-item img{
+        width:100%;
+        height:auto;
     }
 
 }
