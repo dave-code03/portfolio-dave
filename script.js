@@ -1,34 +1,61 @@
+// =========================================
+// THEME BUTTON
+// =========================================
+
 const themeBtn = document.querySelector(".theme-btn");
 
-themeBtn.addEventListener("click",()=>{
+themeBtn.addEventListener("click", () => {
 
-document.body.classList.toggle("light");
+    document.body.classList.toggle("light");
 
 });
+
+
+// =========================================
+// NAVBAR SCROLL
+// =========================================
 
 const nav = document.querySelector("nav");
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-if(window.scrollY > 50){
+    if (window.scrollY > 50) {
 
-nav.classList.add("scrolled");
+        nav.classList.add("scrolled");
 
-}
+    } else {
 
-else{
+        nav.classList.remove("scrolled");
 
-nav.classList.remove("scrolled");
-
-}
+    }
 
 });
+
+
+// =========================================
+// MOBILE MENU
+// =========================================
 
 const menuIcon = document.querySelector(".menu-icon");
 const navLinks = document.querySelector(".nav-links");
 
-menuIcon.addEventListener("click", ()=>{
+menuIcon.addEventListener("click", () => {
 
-navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
+
+});
+
+
+// =========================================
+// CLOSE MENU AFTER CLICK
+// =========================================
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
 
 });
