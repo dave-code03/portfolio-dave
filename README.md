@@ -30,14 +30,9 @@ Modern • Responsive • Interactive
 
 ---
 
-# 📸 Preview
+## 📸 Preview
 
-> Add your portfolio screenshot here.
-
-```md
 ![Portfolio Preview](images/portfolio-preview.png)
-```
-
 ---
 
 # ✨ About This Project
