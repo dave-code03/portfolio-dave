@@ -35,7 +35,7 @@ Modern • Responsive • Interactive
 > Add your portfolio screenshot here.
 
 ```md
-![Portfolio Preview](images/portfolio-preview.png)
+![Portfolio Preview](portfolio-preview.png)
 ```
 
 ---
