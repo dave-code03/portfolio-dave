@@ -536,8 +536,9 @@ line-height:1.8;
 
 .card:hover{
 
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,255,136,.20);
+transform:translateY(-10px) scale(1.02);
+
+box-shadow:0 20px 45px rgba(0,255,136,.25);
 
 }
 
@@ -640,6 +641,18 @@ line-height:1.8;
 .card p{
 
     line-height:1.7;
+
+}
+
+.project-image{
+
+transition:.5s;
+
+}
+
+.project-image:hover{
+
+transform:scale(1.06);
 
 }
 
@@ -1230,5 +1243,80 @@ background:#00ff88;
 color:#050505;
 
 border-color:#00ff88;
+
+}
+
+/* ========================================= */
+/*            BACK TO TOP                    */
+/* ========================================= */
+
+#backToTop{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#00ff88;
+
+color:#050505;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:999;
+
+box-shadow:0 10px 25px rgba(0,255,136,.35);
+
+transition:.35s;
+
+}
+
+#backToTop:hover{
+
+transform:translateY(-5px) scale(1.08);
+
+}
+
+.card,
+.about,
+.contact,
+.why-card,
+.tech-card,
+.testimonial-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 }
