@@ -1338,3 +1338,69 @@ font-weight:600;
 min-height:45px;
 
 }
+
+.contact-form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+margin:35px auto;
+
+max-width:650px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+padding:18px;
+
+border:none;
+
+border-radius:12px;
+
+background:#111827;
+
+color:#fff;
+
+font-size:16px;
+
+}
+
+.contact-form textarea{
+
+height:170px;
+
+resize:none;
+
+}
+
+.contact-form button{
+
+padding:16px;
+
+border:none;
+
+background:#00ff88;
+
+color:#050505;
+
+font-weight:700;
+
+border-radius:12px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.contact-form button:hover{
+
+transform:translateY(-4px);
+
+}
