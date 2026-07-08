@@ -1064,3 +1064,171 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* ========================================= */
+/*          TECHNOLOGIES                     */
+/* ========================================= */
+
+.technologies{
+
+margin:80px auto;
+
+width:min(1200px,92%);
+
+}
+
+.technologies h2{
+
+text-align:center;
+
+color:#00ff88;
+
+margin-bottom:40px;
+
+}
+
+.tech-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+gap:20px;
+
+}
+
+.tech-card{
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.tech-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 10px 25px rgba(0,255,136,.20);
+
+}
+
+.tech-card i{
+
+font-size:40px;
+
+color:#00ff88;
+
+margin-bottom:15px;
+
+display:block;
+
+}
+
+/* ========================================= */
+/*             TESTIMONIALS                  */
+/* ========================================= */
+
+.testimonials{
+
+margin:80px auto;
+
+width:min(1200px,92%);
+
+}
+
+.testimonials h2{
+
+text-align:center;
+
+color:#00ff88;
+
+margin-bottom:40px;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.testimonial-card{
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+padding:30px;
+
+border-radius:20px;
+
+transition:.35s;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 30px rgba(0,255,136,.20);
+
+}
+
+.testimonial-card p{
+
+margin:20px 0;
+
+line-height:1.8;
+
+}
+
+.testimonial-card h4{
+
+color:#00ff88;
+
+}
+
+/* ========================================= */
+/*             DOWNLOAD CV                   */
+/* ========================================= */
+
+.btn-cv{
+
+padding:14px 28px;
+
+border-radius:12px;
+
+background:#111827;
+
+color:#fff;
+
+text-decoration:none;
+
+border:2px solid #444;
+
+transition:.35s;
+
+}
+
+.btn-cv:hover{
+
+background:#00ff88;
+
+color:#050505;
+
+border-color:#00ff88;
+
+}
