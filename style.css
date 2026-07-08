@@ -367,6 +367,142 @@ max-width:340px;
 }
 
 /* ========================================= */
+/*              HERO STATS                   */
+/* ========================================= */
+
+.hero-stats{
+
+display:flex;
+gap:20px;
+margin-top:35px;
+flex-wrap:wrap;
+
+}
+
+.stat-box{
+
+flex:1;
+min-width:120px;
+
+padding:20px;
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 10px 25px rgba(0,255,136,.25);
+
+}
+
+.stat-box h3{
+
+font-size:2rem;
+
+color:#00ff88;
+
+}
+
+.stat-box p{
+
+margin-top:8px;
+
+color:#ccc;
+
+}
+
+/* ========================================= */
+/*            WHY CHOOSE ME                  */
+/* ========================================= */
+
+.why-me{
+
+margin:80px auto;
+
+width:min(1200px,92%);
+
+}
+
+.why-me h2{
+
+text-align:center;
+
+color:#00ff88;
+
+margin-bottom:40px;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.why-card{
+
+background:#0b1220;
+
+border:1px solid #00ff88;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,255,136,.20);
+
+}
+
+.why-card i{
+
+font-size:40px;
+
+color:#00ff88;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#d5d5d5;
+
+line-height:1.8;
+
+}
+
+/* ========================================= */
 /*             CARDS LAYOUT                  */
 /* ========================================= */
 
