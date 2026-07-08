@@ -167,3 +167,13 @@ setTimeout(type,isDeleting?40:80);
 }
 
 type();
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},800);
+
+});
