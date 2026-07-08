@@ -1320,3 +1320,21 @@ transform:translateY(0);
 }
 
 }
+
+/* ================================ */
+/*       TYPING EFFECT              */
+/* ================================ */
+
+.typing{
+
+margin-top:10px;
+
+font-size:1.6rem;
+
+color:#00ff88;
+
+font-weight:600;
+
+min-height:45px;
+
+}
