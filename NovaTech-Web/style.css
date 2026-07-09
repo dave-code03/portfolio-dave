@@ -1098,6 +1098,58 @@ color:var(--text);
 }
 
 /* ========================================= */
+/* BACK TO TOP */
+/* ========================================= */
+
+#backToTop{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:var(--dark);
+
+font-size:1.5rem;
+
+font-weight:bold;
+
+cursor:pointer;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+box-shadow:var(--shadow);
+
+transition:var(--transition);
+
+z-index:999;
+
+}
+
+#backToTop:hover{
+
+background:var(--primary-dark);
+
+transform:translateY(-6px);
+
+}
+
+/* ========================================= */
 /* RESPONSIVE DESIGN */
 /* ========================================= */
 
