@@ -84,10 +84,6 @@ navbar.classList.remove("scrolled");
 
 });
 
-/* ========================================= */
-/*            TYPING EFFECT                   */
-/* ========================================= */
-
 const words=[
 
 "Front-End Developer",
@@ -100,59 +96,53 @@ const words=[
 
 ];
 
-let wordIndex=0;
-
-let letterIndex=0;
-
-let deleting=false;
-
 const typing=document.getElementById("typing-text");
 
-function typingEffect(){
+let wordIndex=0;
 
-const current=words[wordIndex];
+let charIndex=0;
 
-if(!deleting){
+let isDeleting=false;
 
-typing.textContent=current.substring(0,letterIndex++);
+function type(){
 
-if(letterIndex>current.length){
+const currentWord=words[wordIndex];
 
-deleting=true;
+if(isDeleting){
 
-setTimeout(typingEffect,1200);
-
-return;
-
-}
+typing.textContent=currentWord.substring(0,charIndex--);
 
 }else{
 
-typing.textContent=current.substring(0,letterIndex--);
-
-if(letterIndex < 0){
-  
-letterIndex = 0;
-
-deleting=false;
-
-wordIndex++;
-
-if(wordIndex>=words.length){
-
-wordIndex=0;
+typing.textContent=currentWord.substring(0,charIndex++);
 
 }
 
-}
+let speed=isDeleting?50:100;
+
+if(!isDeleting && charIndex===currentWord.length+1){
+
+speed=1800;
+
+isDeleting=true;
 
 }
 
-setTimeout(typingEffect,deleting?45:90);
+if(isDeleting && charIndex===-1){
+
+isDeleting=false;
+
+wordIndex=(wordIndex+1)%words.length;
+
+speed=400;
 
 }
 
-typingEffect();
+setTimeout(type,speed);
+
+}
+
+type();
 
 /* ========================================= */
 /*            BACK TO TOP                     */
