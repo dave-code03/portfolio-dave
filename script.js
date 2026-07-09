@@ -130,7 +130,9 @@ return;
 
 typing.textContent=current.substring(0,letterIndex--);
 
-if(letterIndex===0){
+if(letterIndex < 0){
+  
+letterIndex = 0;
 
 deleting=false;
 
