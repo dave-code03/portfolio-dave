@@ -114,18 +114,39 @@ z-index:999;
 
 .navbar{
 
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
 display:flex;
 
 justify-content:space-between;
+
 align-items:center;
 
-padding:18px 8%;
+padding:170px 8% 80px;
 
-background:rgba(5,5,5,.85);
+background:rgba(5,5,5,.25);
 
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 
-transition:var(--transition);
+transition:all .35s ease;
+
+z-index:999;
+
+}
+
+.navbar.scrolled{
+
+padding:14px 8%;
+
+background:rgba(5,5,5,.95);
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
 
 }
 
