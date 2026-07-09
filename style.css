@@ -1701,11 +1701,21 @@ justify-content:center;
 
 }
 
+.typing-title{
+
+justify-content:center;
+
+height:70px;
+
+}
+
 #typing-text{
 
-min-width:100%;
+width:100%;
 
 text-align:center;
+
+}
 
 }
 
