@@ -51,6 +51,22 @@ navbar.classList.remove("scrolled");
 });
 
 /* =========================================
+   MOBILE MENU
+========================================= */
+
+const menuToggle = document.getElementById("menuToggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+menuToggle.classList.toggle("active");
+
+navLinks.classList.toggle("active");
+
+});
+
+/* =========================================
    SMOOTH SCROLL
 ========================================= */
 
@@ -77,17 +93,31 @@ behavior:"smooth"
 });
 
 /* =========================================
-   MOBILE MENU
+   SCROLL REVEAL
 ========================================= */
 
-const menuToggle = document.getElementById("menuToggle");
+const reveals = document.querySelectorAll(".reveal");
 
-const navLinks = document.querySelector(".nav-links");
+function revealElements(){
 
-menuToggle.addEventListener("click", () => {
+reveals.forEach(element=>{
 
-menuToggle.classList.toggle("active");
+const windowHeight = window.innerHeight;
 
-navLinks.classList.toggle("active");
+const revealTop = element.getBoundingClientRect().top;
+
+const revealPoint = 120;
+
+if(revealTop < windowHeight - revealPoint){
+
+element.classList.add("active");
+
+}
 
 });
+
+}
+
+window.addEventListener("scroll", revealElements);
+
+revealElements();
