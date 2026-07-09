@@ -48,21 +48,17 @@ navLinks.classList.remove("active");
 /*               STICKY NAVBAR                       */
 /* ================================================= */
 
-const navbar = document.querySelector(".navbar");
+const navbar=document.querySelector(".navbar");
 
 window.addEventListener("scroll",()=>{
 
-if(window.scrollY>50){
+if(window.scrollY>80){
 
-navbar.style.background="rgba(5,5,5,.95)";
-
-navbar.style.boxShadow="0 10px 25px rgba(0,0,0,.25)";
+navbar.classList.add("scrolled");
 
 }else{
 
-navbar.style.background="rgba(5,5,5,.80)";
-
-navbar.style.boxShadow="none";
+navbar.classList.remove("scrolled");
 
 }
 
