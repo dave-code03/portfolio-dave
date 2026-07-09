@@ -1196,7 +1196,43 @@ padding:18px 6%;
 
 }
 
+.menu-toggle{
+
+display:flex;
+
+}
+
 .nav-links{
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#111827;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px 0;
+
+display:none;
+
+gap:25px;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.btn-nav{
 
 display:none;
 
@@ -1321,5 +1357,55 @@ align-items:center;
 font-size:.95rem;
 
 }
+
+}
+
+/* ========================================= */
+/* HAMBURGER MENU */
+/* ========================================= */
+
+.menu-toggle{
+
+display:none;
+
+flex-direction:column;
+
+gap:6px;
+
+cursor:pointer;
+
+}
+
+.menu-toggle span{
+
+width:28px;
+
+height:3px;
+
+background:#fff;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+/* Active Animation */
+
+.menu-toggle.active span:nth-child(1){
+
+transform:rotate(45deg) translateY(12px);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+transform:rotate(-45deg) translateY(-12px);
 
 }
