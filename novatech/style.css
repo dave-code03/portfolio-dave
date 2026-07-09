@@ -128,13 +128,13 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:170px 8% 80px;
+padding:18px 8%;
 
-background:rgba(5,5,5,.25);
+background:rgba(5,5,5,.85);
 
 backdrop-filter:blur(10px);
 
-transition:all .35s ease;
+transition:.35s ease;
 
 z-index:999;
 
@@ -289,7 +289,7 @@ align-items:center;
 
 gap:70px;
 
-padding:130px 8% 80px;
+padding:120px 8% 80px;
 
 }
 
