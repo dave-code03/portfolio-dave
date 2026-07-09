@@ -1150,24 +1150,6 @@ transform:translateY(-6px);
 }
 
 /* ========================================= */
-/* NAVBAR SCROLL EFFECT */
-/* ========================================= */
-
-.navbar.scrolled{
-
-background:rgba(15,23,42,.96);
-
-backdrop-filter:blur(14px);
-
-box-shadow:0 10px 35px rgba(0,0,0,.35);
-
-padding:15px 8%;
-
-transition:.35s;
-
-}
-
-/* ========================================= */
 /* RESPONSIVE DESIGN */
 /* ========================================= */
 
@@ -1425,5 +1407,45 @@ opacity:0;
 .menu-toggle.active span:nth-child(3){
 
 transform:rotate(-45deg) translateY(-12px);
+
+}
+
+/* ========================================= */
+/* NAVBAR SCROLL EFFECT */
+/* ========================================= */
+
+.navbar.scrolled{
+
+background:rgba(15,23,42,.96);
+
+backdrop-filter:blur(14px);
+
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+
+padding:15px 8%;
+
+transition:.35s;
+
+}
+
+/* ========================================= */
+/* SCROLL REVEAL */
+/* ========================================= */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
 
 }
