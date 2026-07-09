@@ -313,17 +313,63 @@ overflow:hidden;
 
 }
 
+.typing-title{
+
+height:65px;
+
+display:flex;
+
+align-items:center;
+
+}
+
 #typing-text{
 
 display:inline-block;
 
-min-width:420px;
+width:430px;
 
-white-space:nowrap;
+font-weight:700;
 
 color:var(--primary);
 
-font-weight:700;
+white-space:nowrap;
+
+overflow:hidden;
+
+}
+
+.cursor{
+
+font-size:2rem;
+
+font-weight:bold;
+
+color:var(--primary);
+
+margin-left:5px;
+
+animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+0%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:0;
+
+}
+
+100%{
+
+opacity:1;
 
 }
 
