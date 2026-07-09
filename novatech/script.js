@@ -449,3 +449,41 @@ console.log(
 "🚀 NovaTech Website Developed by Dave Occeant"
 
 );
+
+/* ========================================= */
+/*        REVEAL ANIMATION                   */
+/* ========================================= */
+
+.section,
+.service-card,
+.project-card,
+.tech-card,
+.why-card,
+.testimonial-card,
+.timeline-item{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:.8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Active menu */
+
+.nav-links a.active{
+
+color:var(--primary);
+
+font-weight:700;
+
+}
