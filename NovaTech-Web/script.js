@@ -56,7 +56,7 @@ navbar.classList.remove("scrolled");
 
 const menuToggle = document.getElementById("menuToggle");
 
-const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
 menuToggle.addEventListener("click", () => {
 
@@ -125,16 +125,13 @@ revealElements();
 /* =========================================
    LOADER
 ========================================= */
+window.addEventListener("load", () => {
 
-window.addEventListener("load",()=>{
+    const loader = document.getElementById("loader");
 
-const loader=document.getElementById("loader");
-
-setTimeout(()=>{
-
-loader.classList.add("hide");
-
-},1200);
+    setTimeout(() => {
+        loader.classList.add("hide");
+    }, 1000);
 
 });
 
@@ -164,7 +161,7 @@ current=section.getAttribute("id");
 
 });
 
-navLinks.forEach(link=>{
+navItems.forEach(link=>{
 
 link.classList.remove("active");
 
@@ -175,18 +172,5 @@ link.classList.add("active");
 }
 
 });
-
-});
-
-/* ===========================
-   LOADER
-=========================== */
-window.addEventListener("load", () => {
-
-    const loader = document.getElementById("loader");
-
-    setTimeout(() => {
-        loader.classList.add("hide");
-    }, 1000);
 
 });
