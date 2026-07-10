@@ -1200,6 +1200,7 @@ padding:18px 6%;
 
 display:flex;
 
+z-index:2000;  
 }
 
 .nav-links{
@@ -1211,6 +1212,8 @@ top:80px;
 left:0;
 
 width:100%;
+
+z-index:1500;
 
 background:#111827;
 
@@ -1232,6 +1235,18 @@ display:flex;
 
 }
 
+.nav-links a.active{
+
+color:var(--primary);
+
+}
+
+.nav-links a.active::after{
+
+width:100%;
+
+}
+    
 .btn-nav{
 
 display:none;
