@@ -1314,6 +1314,10 @@ font-size:1.6rem;
 
 }
 
+.logo img{
+    width:145px;
+}
+    
 .hero-text h1{
 
 font-size:2rem;
@@ -1535,6 +1539,11 @@ transform:scale(1);
 
 }
 
+.loader-logo img{
+    width:220px;
+    animation:pulse 1.3s infinite;
+}
+    
 }
 
 #loader.hide{
@@ -1543,4 +1552,15 @@ opacity:0;
 
 visibility:hidden;
 
+}
+
+.logo img{
+    width:180px;
+    height:auto;
+    display:block;
+    transition:.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
 }
