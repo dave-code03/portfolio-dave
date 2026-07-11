@@ -62,7 +62,6 @@ menuToggle.addEventListener("click", () => {
 /* =========================================
    SMOOTH SCROLL
 ========================================= */
-
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
 
 link.addEventListener("click",function(e){
