@@ -23,7 +23,7 @@ const navMenu = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a");
 const backToTop = document.getElementById("backToTop");
 const reveals = document.querySelectorAll(".reveal");
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("header, section");
 
 /* =========================================
    MOBILE MENU
