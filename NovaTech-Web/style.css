@@ -208,6 +208,14 @@ z-index:1000;
 
 }
 
+.logo{
+    flex:1;
+}
+
+.menu-toggle{
+    margin-left:auto;
+}
+
 .logo a{
 
 font-size:2rem;
