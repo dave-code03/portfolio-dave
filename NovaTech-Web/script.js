@@ -88,10 +88,9 @@ behavior:"smooth"
 /* =========================================
    SCROLL REVEAL
 ========================================= */
-
-const reveals = document.querySelectorAll(".reveal");
-
 function revealElements(){
+
+const windowHeight = window.innerHeight;
 
 reveals.forEach(element=>{
 
