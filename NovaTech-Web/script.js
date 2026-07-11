@@ -95,8 +95,6 @@ function revealElements(){
 
 reveals.forEach(element=>{
 
-const windowHeight = window.innerHeight;
-
 const revealTop = element.getBoundingClientRect().top;
 
 const revealPoint = 120;
@@ -131,40 +129,33 @@ window.addEventListener("load", () => {
 /* =========================================
    ACTIVE NAVIGATION
 ========================================= */
+const sections = document.querySelectorAll("section");
 
-const sections=document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
 
-const navLinks=document.querySelectorAll(".nav-links a");
+    let current = "";
 
-window.addEventListener("scroll",()=>{
+    sections.forEach(section => {
 
-let current="";
+        const sectionTop = section.offsetTop - 120;
 
-sections.forEach(section=>{
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
 
-const sectionTop=section.offsetTop-120;
+    });
 
-const sectionHeight=section.clientHeight;
+    navLinks.forEach(link => {
 
-if(window.scrollY>=sectionTop){
+        link.classList.remove("active");
 
-current=section.getAttribute("id");
+        if (link.getAttribute("href") === "#" + current) {
 
-}
+            link.classList.add("active");
 
-});
+        }
 
-navItems.forEach(link=>{
-
-link.classList.remove("active");
-
-if(link.getAttribute("href")==="#"+current){
-
-link.classList.add("active");
-
-}
-
-});
+    });
 
 });
 
