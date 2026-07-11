@@ -50,20 +50,13 @@ navbar.classList.remove("scrolled");
 
 });
 
-/* =========================================
-   MOBILE MENU
-========================================= */
-
 const menuToggle = document.getElementById("menuToggle");
-
-const navItems = document.querySelectorAll(".nav-links a");
+const navMenu = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links a");
 
 menuToggle.addEventListener("click", () => {
-
-menuToggle.classList.toggle("active");
-
-navLinks.classList.toggle("active");
-
+    menuToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
 /* =========================================
@@ -173,4 +166,11 @@ link.classList.add("active");
 
 });
 
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+    });
 });
