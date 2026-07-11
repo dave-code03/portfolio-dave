@@ -116,11 +116,11 @@ revealElements();
 ========================================= */
 window.addEventListener("load", () => {
 
+    console.log("Page loaded");
+
     const loader = document.getElementById("loader");
 
-    setTimeout(() => {
-        loader.classList.add("hide");
-    }, 1000);
+    loader.classList.add("hide");
 
 });
 
