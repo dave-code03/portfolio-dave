@@ -1173,6 +1173,12 @@ text-align:center;
 
 }
 
+.menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+    
 }
 
 /* ---------- MOBILE ---------- */
@@ -1184,21 +1190,6 @@ display:flex;
 align-items:center;
 font-size:1.6rem;
 
-}
-    
-.menu-toggle{
-    display:flex !important;
-    flex-direction:column;
-    gap:6px;
-    cursor:pointer;
-    position:fixed;
-    top:20px;
-    right:20px;
-    z-index:99999;
-    background:red;
-    padding:10px;
-    align-items:center;
-    justify-content:center;
 }
 
 .hero-text h1{
@@ -1265,6 +1256,13 @@ font-size:.95rem;
 /* ========================================= */
 /* HAMBURGER MENU */
 /* ========================================= */
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
 .menu-toggle span{
 
 width:28px;
