@@ -1037,6 +1037,21 @@ transform:translateY(-6px);
 
 @media (max-width:1024px){
 
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    background:#fff;
+    border-radius:10px;
+    transition:.3s;
+}
+    
 .hero-content,
 .about-content,
 .contact-container{
@@ -1177,7 +1192,7 @@ text-align:center;
     display:flex;
     align-items:center;
     justify-content:center;
-}
+}    
     
 }
 
@@ -1256,26 +1271,6 @@ font-size:.95rem;
 /* ========================================= */
 /* HAMBURGER MENU */
 /* ========================================= */
-.menu-toggle{
-    display:none;
-    flex-direction:column;
-    gap:6px;
-    cursor:pointer;
-}
-
-.menu-toggle span{
-
-width:28px;
-
-height:3px;
-
-background:#fff;
-
-border-radius:10px;
-
-transition:.3s;
-
-}
 
 /* Active Animation */
 
