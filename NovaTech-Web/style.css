@@ -1250,13 +1250,16 @@ font-size:.95rem;
 /* ========================================= */
 
 .menu-toggle{
-display:flex;
-margin-left:auto;
-justify-content:center;
-align-items:center;
-width:45px;
-height:45px;
-z-index:2000;
+    display:flex !important;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:99999;
+    background:red;
+    padding:10px;
 }
 
 .menu-toggle span{
