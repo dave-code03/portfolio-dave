@@ -1073,18 +1073,12 @@ margin-top:40px;
 @media (max-width:768px){
 
 .navbar{
-
-padding:18px 6%;
-
-}
-
-.menu-toggle{
-
+padding:12px 20px;
 display:flex;
-
-z-index:2000;  
+align-items:center;
+justify-content:space-between;
 }
-
+    
 .nav-links{
 
 position:absolute;
@@ -1256,15 +1250,13 @@ font-size:.95rem;
 /* ========================================= */
 
 .menu-toggle{
-
-display:none;
-
-flex-direction:column;
-
-gap:6px;
-
-cursor:pointer;
-
+display:flex;
+margin-left:auto;
+justify-content:center;
+align-items:center;
+width:45px;
+height:45px;
+z-index:2000;
 }
 
 .menu-toggle span{
