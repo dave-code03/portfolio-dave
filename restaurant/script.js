@@ -1,3 +1,6 @@
+/* =========================================
+   LOADER
+========================================= */
 const loader = document.getElementById("loader");
 
     if(loader){
@@ -14,9 +17,9 @@ const loader = document.getElementById("loader");
 
 });
 
-
-
-
+/* =========================================
+   ELEMENTS
+========================================= */
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
