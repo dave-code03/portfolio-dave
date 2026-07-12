@@ -1088,7 +1088,7 @@ margin-top:40px;
 @media (max-width:768px){
 
 .navbar{
-    position:fixed;
+    padding:20px 40px;
     top:0;
     left:0;
     width:100%;
@@ -1215,7 +1215,7 @@ font-size:1.6rem;
 }
 
 .logo img{
-    width:95px;
+    width:90px;
 }
     
 .hero-text h1{
@@ -1433,7 +1433,7 @@ visibility:hidden;
 }
 
 .logo img{
-    width:120px;
+    width:100px;
     height:auto;
     display:block;
     transition:.3s ease;
