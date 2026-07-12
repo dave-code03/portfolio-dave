@@ -1,3 +1,22 @@
+const loader = document.getElementById("loader");
+
+    if(loader){
+
+        loader.style.opacity = "0";
+
+        setTimeout(() => {
+
+            loader.style.display = "none";
+
+        },600);
+
+    }
+
+});
+
+
+
+
 const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
@@ -124,19 +143,3 @@ window.addEventListener("load", () => {
         left: 0,
         behavior: "instant"
     });
-
-    const loader = document.getElementById("loader");
-
-    if(loader){
-
-        loader.style.opacity = "0";
-
-        setTimeout(() => {
-
-            loader.style.display = "none";
-
-        },600);
-
-    }
-
-});
