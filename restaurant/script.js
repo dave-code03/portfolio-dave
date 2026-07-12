@@ -2,6 +2,8 @@ const menuToggle = document.querySelector(".menu-toggle");
 
 const navMenu = document.querySelector("nav ul");
 
+const backToTop = document.getElementById("backToTop");
+
 const icon = document.querySelector(".menu-toggle i");
 
 menuToggle.addEventListener("click",()=>{
