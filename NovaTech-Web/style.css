@@ -1075,6 +1075,7 @@ margin-top:40px;
 .navbar{
 padding:12px 20px;
 display:flex;
+height:80px;
 align-items:center;
 justify-content:space-between;
 }
@@ -1179,7 +1180,8 @@ text-align:center;
 @media (max-width:480px){
 
 .logo a{
-
+display:flex;
+align-items:center;
 font-size:1.6rem;
 
 }
@@ -1260,6 +1262,8 @@ font-size:.95rem;
     z-index:99999;
     background:red;
     padding:10px;
+    align-items:center;
+    justify-content:center;
 }
 
 .menu-toggle span{
