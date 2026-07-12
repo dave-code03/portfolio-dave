@@ -24,22 +24,40 @@ icon.classList.add("fa-bars");
 
 });
 
-const backToTop = document.querySelector(".back-to-top");
+/* =========================================
+   BACK TO TOP
+========================================= */
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll", () => {
 
-    
-    if(window.scrollY>300){
+    if (!backToTop) return;
 
-        backToTop.classList.add("show");
+    if (window.scrollY > 300) {
 
-    }else{
+        backToTop.style.display = "flex";
 
-        backToTop.classList.remove("show");
+    } else {
+
+        backToTop.style.display = "none";
 
     }
 
 });
+
+if (backToTop) {
+
+    backToTop.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
