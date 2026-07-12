@@ -61,6 +61,9 @@ if (backToTop) {
 
 }
 
+/* =========================================
+   ACTIVE NAVIGATION
+========================================= */
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
