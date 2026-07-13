@@ -46,12 +46,6 @@ if ("scrollRestoration" in history) {
 
 <body>
 
-  <a href="#" class="back-to-top">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</a>
-
 <!-- ========================= -->
 <!-- LOADER -->
 <!-- ========================= -->
@@ -59,19 +53,19 @@ if ("scrollRestoration" in history) {
 <div id="loader">
 
 <div class="loader-logo">
-    <img src="images/logo.png" alt="FoodHouse">
+    <img src="images/logo.png" alt="FoodHouse" loading="lazy">
 </div>
 
 </div>
 
   <!-- ===== NAVBAR ===== -->
-  <header id="home">
+  <header>
 
     <nav class="navbar">
 
         <div class="logo">
             <a href="#">
-                <img src="images/logo.png" alt="FoodHouse">
+                <img src="images/logo.png" alt="FoodHouse" loading="lazy">
             </a>
         </div>
 
@@ -82,7 +76,9 @@ if ("scrollRestoration" in history) {
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div class="menu-toggle">
+        <div class="menu-toggle"
+     aria-label="Open Menu"
+     role="button">
             <i class="fa-solid fa-bars"></i>
         </div>
 
@@ -92,9 +88,6 @@ if ("scrollRestoration" in history) {
 
     </nav>
 
-    </header>
-
-    <main>
 <!-- ===== HERO ===== -->
 
 <section class="hero">
@@ -142,12 +135,16 @@ Learn More
 
 <div class="hero-image">
   
-<img src="images/hero.png" alt="Delicious Food">
+<img src="images/hero.png" alt="Delicious Food" loading="lazy">
   
 </div>
   
 </section>
 
+</header>
+
+<main>
+  
   <!-- ===== MENU ===== -->
 
 <section class="menu" id="menu">
@@ -176,7 +173,7 @@ Fresh beef, cheese, lettuce and our special sauce.
 
 <span>$12</span>
 
-<a href="#" class="card-btn">
+<a class="card-btn">
 
 Order Now
 
@@ -198,7 +195,7 @@ Wood-fired pizza with mozzarella and tomato sauce.
 
 <span>$16</span>
 
-<a href="#" class="card-btn">
+<a class="card-btn">
 
 Order Now
 
@@ -220,7 +217,7 @@ Grilled steak served with fresh vegetables.
 
 <span>$22</span>
 
-<a href="#" class="card-btn">
+<a class="card-btn">
 
 Order Now
 
@@ -238,7 +235,7 @@ Order Now
 
 <div class="about-image">
 
-<img src="images/chef.png" alt="Our Professional Chef">
+<img src="images/chef.png" alt="Our Professional Chef" loading="lazy">
 
 </div>
 
@@ -470,7 +467,7 @@ Passionate chefs dedicated to creating unforgettable meals.
 
 <div class="chef-card">
 
-<img src="images/chef1.png" alt="Head Chef">
+<img src="images/chef1.png" alt="Head Chef" loading="lazy">
 
 <h3>John Carter</h3>
 
@@ -480,7 +477,7 @@ Passionate chefs dedicated to creating unforgettable meals.
 
 <div class="chef-card">
 
-<img src="images/chef2.png" alt="Pizza Chef">
+<img src="images/chef2.png" alt="Pizza Chef" loading="lazy">
 
 <h3>Emma Wilson</h3>
 
@@ -490,7 +487,7 @@ Passionate chefs dedicated to creating unforgettable meals.
 
 <div class="chef-card">
 
-<img src="images/chef3.png" alt="Grill Master">
+<img src="images/chef3.png" alt="Grill Master" loading="lazy">
 
 <h3>David Brown</h3>
 
@@ -512,8 +509,8 @@ Passionate chefs dedicated to creating unforgettable meals.
 
 <p class="contact-subtitle">
 
-This is a demo restaurant website created to showcase my Front-End development skills.
-  
+  This is a fictional restaurant website created to showcase my Front-End Development skills and UI/UX design capabilities.
+
 </p>
 
 <div class="contact-container">
@@ -608,7 +605,7 @@ Get our latest offers, discounts and delicious updates.
 
 </p>
 
-<form class="newsletter-form">
+<form class="newsletter-form" action="#">
 
 <input type="email" placeholder="Enter your email">
 
@@ -704,6 +701,9 @@ Front-End Developer passionate about creating modern, responsive and user-friend
 
 </div>
 
+  <p class="demo-text">
+Demo Project • Built with HTML5, CSS3 & JavaScript
+</p>
 
 <p class="copyright">
 
@@ -719,10 +719,9 @@ Designed & Developed by <strong>Dave Occéant</strong><br>
 <!-- BACK TO TOP BUTTON -->
 <!-- ========================= -->
 
-<button id="backToTop">
-
-↑
-
+<button id="backToTop"
+        aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
 </button>
   
 <script src="script.js"></script>
