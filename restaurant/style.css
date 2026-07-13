@@ -30,7 +30,7 @@ color:#222;
 
 /* ===== NAVBAR ===== */
 
-nav{
+.navbar{
 
 display:flex;
 justify-content:space-between;
@@ -1681,7 +1681,7 @@ align-items:center;
 
 z-index:99999;
 
-transition:transform .6s ease;
+transition:opacity .6s ease;
 
 }
 
