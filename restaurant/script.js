@@ -1,6 +1,16 @@
+"use strict";
+
 /* =========================================
    INITIALIZE APP
 ========================================= */
+document.addEventListener("DOMContentLoaded", init);
+
+function init() {
+    initMenu();
+    initBackToTop();
+    initActiveLinks();
+    initLoader();
+});
 
 window.addEventListener("load", () => {
     initLoader();
@@ -12,6 +22,7 @@ window.addEventListener("load", () => {
     window.scrollTo(0, 0);
 });
 
+}
 
 /* =========================================
    LOADER
