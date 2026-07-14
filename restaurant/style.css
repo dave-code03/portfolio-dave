@@ -2018,7 +2018,7 @@ color:#222;
 
 /* ===== BACK TO TOP ===== */
 
-.back-to-top{
+.backtotop{
 
 position:fixed;
 
@@ -2060,7 +2060,7 @@ z-index:999;
 
 }
 
-.back-to-top:hover{
+.backtotop:hover{
 
 transform:translateY(-8px) rotate(360deg);
 
@@ -2068,7 +2068,7 @@ background:#e85b25;
 
 }
 
-.back-to-top.show{
+.backtotop.show{
 
 opacity:1;
 
