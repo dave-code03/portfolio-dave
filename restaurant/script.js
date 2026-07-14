@@ -27,28 +27,23 @@ window.addEventListener("load", () => {
 /* =========================================
    LOADER
 ========================================= */
-
 function initLoader() {
 
     const loader = document.getElementById("loader");
 
     if (!loader) return;
 
-    loader.style.opacity = "0";
-loader.style.visibility = "hidden";
+    window.addEventListener("load", () => {
 
-    setTimeout(() => {
-        loader.style.display = "none";
-    }, 600);
+        loader.style.opacity = "0";
 
-   setTimeout(() => {
+        setTimeout(() => {
+            loader.remove();
+        }, 600);
 
-    loader.remove();
+    });
 
-},600);
-   
 }
-
 
 /* =========================================
    MOBILE MENU
@@ -132,44 +127,34 @@ function initBackToTop() {
 /* =========================================
    ACTIVE NAVIGATION
 ========================================= */
-
 function initActiveLinks() {
 
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav ul li a");
-    
+
     if (!sections.length || !navLinks.length) return;
 
     window.addEventListener("scroll", () => {
 
         let current = "";
+        const scrollPosition = window.scrollY + 200;
 
         sections.forEach(section => {
 
-            const sectionTop = section.offsetTop - 150;
+            const sectionTop = section.offsetTop;
 
-           const scrollPosition = window.scrollY + 200;
-
-            if (window.scrollY >= sectionTop) {
-
+            if (scrollPosition >= sectionTop) {
                 current = section.getAttribute("id");
-               
-            if(scrollPosition >= sectionTop){
-               
-           }
+            }
 
-       });
-
-    });
+        });
 
         navLinks.forEach(link => {
 
             link.classList.remove("active");
 
             if (link.getAttribute("href") === "#" + current) {
-
                 link.classList.add("active");
-
             }
 
         });
