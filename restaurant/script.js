@@ -6,11 +6,13 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
+
+    initLoader();
     initMenu();
     initBackToTop();
     initActiveLinks();
-    initLoader();
-});
+
+}
 
 window.addEventListener("load", () => {
     initLoader();
@@ -21,8 +23,6 @@ window.addEventListener("load", () => {
     history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
 });
-
-}
 
 /* =========================================
    LOADER
@@ -35,11 +35,18 @@ function initLoader() {
     if (!loader) return;
 
     loader.style.opacity = "0";
+loader.style.visibility = "hidden";
 
     setTimeout(() => {
         loader.style.display = "none";
     }, 600);
 
+   setTimeout(() => {
+
+    loader.remove();
+
+},600);
+   
 }
 
 
@@ -57,6 +64,18 @@ function initMenu() {
 
     menuToggle.addEventListener("click", () => {
 
+       document.querySelectorAll("nav ul li a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navMenu.classList.remove("active");
+
+        icon.classList.replace("fa-xmark","fa-bars");
+
+    });
+
+});
+       
         navMenu.classList.toggle("active");
 
         if (navMenu.classList.contains("active")) {
@@ -118,7 +137,7 @@ function initActiveLinks() {
 
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav ul li a");
-
+    
     if (!sections.length || !navLinks.length) return;
 
     window.addEventListener("scroll", () => {
@@ -129,13 +148,19 @@ function initActiveLinks() {
 
             const sectionTop = section.offsetTop - 150;
 
+           const scrollPosition = window.scrollY + 200;
+
             if (window.scrollY >= sectionTop) {
 
                 current = section.getAttribute("id");
+               
+            if(scrollPosition >= sectionTop){
+               
+           }
 
-            }
+       });
 
-        });
+    });
 
         navLinks.forEach(link => {
 
@@ -152,3 +177,25 @@ function initActiveLinks() {
     });
 
 }
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+hiddenElements.forEach(el=>observer.observe(el));
