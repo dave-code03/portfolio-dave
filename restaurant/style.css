@@ -43,7 +43,7 @@ body{
     min-height:100%;
     scroll-behavior:smooth;
     font-family:"Poppins",sans-serif;
-    background:#FFF8E7;
+    background:#1b1b1b;
     color:var(--dark);
     overflow-x:hidden;
     transition:background .8s ease;
