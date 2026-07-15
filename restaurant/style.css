@@ -44,9 +44,11 @@ html{
 body{
 
     font-family:"Poppins",sans-serif;
-    background:var(--light);
+    background:#FFF8E7;
     color:var(--dark);
     overflow-x:hidden;
+
+    transition:background .8s ease;
 
 }
 
