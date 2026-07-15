@@ -71,7 +71,7 @@ setTimeout(()=>{
 
     document.body.classList.add("loaded");
 
-},4000);
+},2800);
 
 /* =========================================
    MOBILE MENU
