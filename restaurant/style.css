@@ -50,6 +50,30 @@ body{
 
 }
 
+body.loaded .navbar{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+body.loaded .hero-text{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+body.loaded .hero-image{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
 img{
 
     max-width:100%;
@@ -891,7 +915,7 @@ nav ul li a.active{
 
     padding:80px 20px;
 
-    color:#FFD43B;
+    color:black;
 
     font-size:24px;
 
@@ -1805,6 +1829,40 @@ nav ul li a.active{
         opacity:0;
 
     }
+
+}
+
+/* =========================================
+   INTRO ANIMATION
+========================================= */
+
+.navbar{
+
+    transform:translateY(-100px);
+
+    opacity:0;
+
+    transition:1s ease;
+
+}
+
+.hero-text{
+
+    transform:translateY(80px);
+
+    opacity:0;
+
+    transition:1s ease;
+
+}
+
+.hero-image{
+
+    transform:scale(.8);
+
+    opacity:0;
+
+    transition:1.2s ease;
 
 }
 
