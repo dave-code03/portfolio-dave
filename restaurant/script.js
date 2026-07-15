@@ -49,21 +49,17 @@ function initLoader(){
 
         },1700);
 
-        setTimeout(()=>{
+        setTimeout(() => {
 
-            loader.style.opacity="0";
+    loader.style.opacity="0";
 
-        },1800);
+},4300);
 
-        setTimeout(()=>{
+setTimeout(() => {
 
-            loader.remove();
+    loader.remove();
 
-        },2400);
-
-    });
-
-}
+},4800);
 
 setTimeout(()=>{
 
@@ -71,7 +67,7 @@ setTimeout(()=>{
 
     document.body.classList.add("loaded");
 
-},2800);
+},2400);
 
 /* =========================================
    MOBILE MENU
