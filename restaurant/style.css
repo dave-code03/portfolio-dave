@@ -1908,6 +1908,38 @@ nav ul li a.active{
 
 }
 
+.loader-credit{
+
+    margin-top:30px;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    letter-spacing:1px;
+
+    opacity:0;
+
+    animation:creditFade 1s ease forwards;
+
+    animation-delay:2.8s;
+
+}
+
+.loader-credit strong{
+
+    display:block;
+
+    margin-top:8px;
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
 /* =========================================
    INTRO ANIMATION
 ========================================= */
@@ -1943,6 +1975,26 @@ nav ul li a.active{
 }
 
 /* ===== ANIMATIONS ===== */
+@keyframes creditFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
 @keyframes lineGrow{
 
     from{
