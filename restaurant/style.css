@@ -1854,6 +1854,73 @@ nav ul li a.active{
 
 }
 
+.loader-content{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.loader-title{
+
+    margin-top:25px;
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+.loader-subtitle{
+
+    margin-top:10px;
+
+    font-size:22px;
+
+    color:#FFD8B8;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+}
+
+.loader-small{
+
+    margin-top:12px;
+
+    color:#ffffffcc;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+}
+
+.loader-line{
+
+    width:0;
+
+    height:3px;
+
+    margin-top:25px;
+
+    background:#ff6b35;
+
+    border-radius:20px;
+
+    animation:lineGrow 1.2s forwards;
+
+    animation-delay:1s;
+
+}
+
 /* =========================================
    INTRO ANIMATION
 ========================================= */
@@ -1889,6 +1956,22 @@ nav ul li a.active{
 }
 
 /* ===== ANIMATIONS ===== */
+@keyframes lineGrow{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:180px;
+
+    }
+
+}
+
 @keyframes pulseGlow{
 
     0%{
