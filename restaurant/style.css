@@ -1741,6 +1741,7 @@ nav ul li a.active{
 
 }
 
+/* ===== LOADER ===== */
 #loader{
 
     position:fixed;
@@ -1774,6 +1775,184 @@ nav ul li a.active{
     max-width:45vw;
 
     animation:loaderZoom 1.5s ease-in-out infinite alternate;
+
+}
+
+@keyframes loaderIntro{
+
+    0%{
+
+        transform:scale(.3);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    75%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(9);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes loaderZoom{
+
+    from{
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+.hero-text{
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero-image{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+.food-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.food-card:hover{
+
+transform:translateY(-15px) scale(1.05);
+
+box-shadow:0 25px 50px rgba(255,107,53,.25);
+
+}
+
+.feature-box{
+
+animation:fadeUp .8s ease;
+
+}
+
+.review-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.chef-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+.about-text{
+
+animation:fadeUp .8s ease;
+
+}
+
+.about-image{
+
+animation:fadeUp .8s ease;
+
+}
+
+/* ===== HAMBURGER ===== */
+
+.menu-toggle{
+
+display:none;
+font-size:30px;
+cursor:pointer;
+color:#222;
+
+}
+
+/* ===== BACK TO TOP ===== */
+
+.backtotop{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:55px;
+
+height:55px;
+
+background:var(--primary);
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border:3px solid white;
+  
+border-radius:50%;
+
+font-size:22px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+opacity:0;
+
+pointer-events:none;
+
+transition:transform .35s ease;
+
+z-index:999;
+
+}
+
+.backtotop:hover{
+
+transform:translateY(-8px) rotate(360deg);
+
+background:#e85b25;
+
+}
+
+.backtotop.show{
+
+opacity:1;
+
+pointer-events:auto;
 
 }
 
@@ -1976,182 +2155,3 @@ font-size:17px;
 } 
 
 }
-
-/* ===== ANIMATIONS ===== */
-@keyframes loaderZoom{
-
-    from{
-
-        transform:scale(.9);
-
-    }
-
-    to{
-
-        transform:scale(1.05);
-
-    }
-
-}
-
-@keyframes pulse{
-
-    0%{
-        transform: scale(1);
-    }
-
-    50%{
-        transform: scale(1.1);
-    }
-
-    100%{
-        transform: scale(1);
-    }
-
-}
-
-@keyframes fadeUp{
-
-0%{
-
-opacity:0;
-transform:translateY(50px);
-
-}
-
-100%{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-.hero-text{
-
-animation:fadeUp 1s ease;
-
-}
-
-.hero-image{
-
-animation:fadeUp 1.2s ease;
-
-}
-
-.food-card{
-
-animation:fadeUp .8s ease;
-
-}
-
-.food-card:hover{
-
-transform:translateY(-15px) scale(1.05);
-
-box-shadow:0 25px 50px rgba(255,107,53,.25);
-
-}
-
-.feature-box{
-
-animation:fadeUp .8s ease;
-
-}
-
-.review-card{
-
-animation:fadeUp .8s ease;
-
-}
-
-.chef-card{
-
-animation:fadeUp .8s ease;
-
-}
-
-.about-text{
-
-animation:fadeUp .8s ease;
-
-}
-
-.about-image{
-
-animation:fadeUp .8s ease;
-
-}
-
-/* ===== HAMBURGER ===== */
-
-.menu-toggle{
-
-display:none;
-font-size:30px;
-cursor:pointer;
-color:#222;
-
-}
-
-/* ===== BACK TO TOP ===== */
-
-.backtotop{
-
-position:fixed;
-
-bottom:25px;
-
-right:25px;
-
-width:55px;
-
-height:55px;
-
-background:var(--primary);
-
-color:white;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-border:3px solid white;
-  
-border-radius:50%;
-
-font-size:22px;
-
-text-decoration:none;
-
-box-shadow:0 10px 25px rgba(0,0,0,.25);
-
-opacity:0;
-
-pointer-events:none;
-
-transition:transform .35s ease;
-
-z-index:999;
-
-}
-
-.backtotop:hover{
-
-transform:translateY(-8px) rotate(360deg);
-
-background:#e85b25;
-
-}
-
-.backtotop.show{
-
-opacity:1;
-
-pointer-events:auto;
-
-}
-
