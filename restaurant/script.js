@@ -165,14 +165,14 @@ function initActiveLinks() {
     window.addEventListener("scroll", () => {
 
         let current = "";
-        const scrollPosition = window.scrollY + 200;
+        const scrollPosition = window.scrollY + 100;
 
         sections.forEach(section => {
 
             const sectionTop = section.offsetTop;
 
             if (scrollPosition >= sectionTop) {
-                current = section.getAttribute("id");
+                current = section.id;
             }
 
         });
@@ -182,38 +182,16 @@ function initActiveLinks() {
             link.classList.remove("active");
 
             if (link.getAttribute("href") === "#" + current) {
+
                 link.classList.add("active");
+
             }
 
         });
 
-      let lastScroll = 0;
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll",()=>{
-
-    let current = window.pageYOffset;
-
-    if(current > lastScroll && current > 120){
-
-        navbar.classList.add("hide");
-
-    }else{
-
-        navbar.classList.remove("hide");
-
-    }
-
-    lastScroll = current;
-
-});
-       
-       
     });
 
 }
-
 /* =========================================
    SCROLL REVEAL
 ========================================= */
