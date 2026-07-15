@@ -875,12 +875,7 @@ nav ul li a.active{
 /* =========================================
    STATISTICS
 ========================================= */
-
 .stats{
-
-    padding:100px 8%;
-
-    background:#222;
 
     display:grid;
 
@@ -888,22 +883,31 @@ nav ul li a.active{
 
     gap:30px;
 
-    text-align:center;
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:80px 20px;
 
 }
 
 .stat-box{
 
-    background:rgba(255,255,255,.05);
+    width:100%;
 
-    padding:40px 25px;
+    min-height:230px;
 
-    border-radius:22px;
+    display:flex;
 
-    transition:var(--transition);
+    flex-direction:column;
 
-    border:1px solid rgba(255,255,255,.08);
+    justify-content:center;
 
+    align-items:center;
+
+   overflow:hidden;
 }
 
 .stat-box:hover{
@@ -913,6 +917,12 @@ nav ul li a.active{
     background:rgba(255,107,53,.12);
 
     border-color:var(--primary);
+
+    font-size:3rem;
+
+    word-break:break-word;
+
+    text-align:center;
 
 }
 
