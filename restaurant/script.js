@@ -164,28 +164,6 @@ function initActiveLinks() {
 
     window.addEventListener("scroll", () => {
 
-       let lastScroll = 0;
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll",()=>{
-
-    let current = window.pageYOffset;
-
-    if(current > lastScroll && current > 120){
-
-        navbar.classList.add("hide");
-
-    }else{
-
-        navbar.classList.remove("hide");
-
-    }
-
-    lastScroll = current;
-
-});
-       
         let current = "";
         const scrollPosition = window.scrollY + 200;
 
@@ -209,6 +187,29 @@ window.addEventListener("scroll",()=>{
 
         });
 
+      let lastScroll = 0;
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+
+    let current = window.pageYOffset;
+
+    if(current > lastScroll && current > 120){
+
+        navbar.classList.add("hide");
+
+    }else{
+
+        navbar.classList.remove("hide");
+
+    }
+
+    lastScroll = current;
+
+});
+       
+       
     });
 
 }
