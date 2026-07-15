@@ -918,12 +918,7 @@ nav ul li a.active{
 
     border-color:var(--primary);
 
-    font-size:3rem;
-
-    word-break:break-word;
-
-    text-align:center;
-
+    
 }
 
 .stat-box h2{
@@ -936,6 +931,13 @@ nav ul li a.active{
 
     margin-bottom:15px;
 
+    font-size:3rem;
+
+    word-break:break-word;
+
+    text-align:center;
+
+   
 }
 
 .stat-box p{
@@ -1739,6 +1741,42 @@ nav ul li a.active{
 
 }
 
+#loader{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100vh;
+
+    background:#FFF7E8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .6s ease;
+
+}
+
+.loader-logo img{
+
+    width:180px;
+
+    max-width:45vw;
+
+    animation:loaderZoom 1.5s ease-in-out infinite alternate;
+
+}
+
 /* ===== RESPONSIVE ===== */
 
 @media (max-width:768px){
@@ -1940,20 +1978,20 @@ font-size:17px;
 }
 
 /* ===== ANIMATIONS ===== */
-#loader{
-    position: fixed;
-    inset: 0;
-    background: #fffaf0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    transition: opacity .6s ease;
-}
+@keyframes loaderZoom{
 
-.loader-logo img{
-    width: 120px;
-    animation: pulse 1.2s infinite;
+    from{
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        transform:scale(1.05);
+
+    }
+
 }
 
 @keyframes pulse{
