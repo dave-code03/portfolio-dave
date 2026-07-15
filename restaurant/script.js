@@ -57,6 +57,15 @@ function initLoader(){
     });
 
 }
+
+setTimeout(()=>{
+
+    loader.remove();
+
+    document.body.classList.add("loaded");
+
+},2400);
+
 /* =========================================
    MOBILE MENU
 ========================================= */
