@@ -52,6 +52,12 @@ body{
 
 }
 
+body.loaded{
+
+    background:#ffffff;
+
+}
+
 body.loaded .navbar{
 
     transform:translateY(0);
@@ -71,6 +77,22 @@ body.loaded .hero-text{
 body.loaded .hero-image{
 
     transform:scale(1);
+
+    opacity:1;
+
+}
+
+main,
+footer{
+
+    opacity:0;
+
+    transition:opacity .8s ease;
+
+}
+
+body.loaded main,
+body.loaded footer{
 
     opacity:1;
 
@@ -114,7 +136,7 @@ button{
     align-items:center;
 
     padding:18px 8%;
-
+    transition:1s ease .15s;
     background:rgba(255,255,255,.95);
     backdrop-filter:blur(12px);
 
@@ -284,13 +306,13 @@ nav ul li a.active{
 .hero-text{
 
     flex:1;
-
+    transition:1s ease .25s;
 }
 
 .hero-image{
 
     flex:1;
-
+    transition:1.2s ease .45s;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -1790,6 +1812,30 @@ nav ul li a.active{
 
 }
 
+.loader-logo{
+
+    position:relative;
+
+}
+
+.loader-logo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-60px;
+
+    background:radial-gradient(circle,
+    rgba(255,107,53,.35),
+    transparent 70%);
+
+    animation:pulseGlow 2s ease infinite;
+
+    z-index:-1;
+
+}
+
 .loader-logo img{
 
     width:180px;
@@ -1799,6 +1845,33 @@ nav ul li a.active{
     animation:loaderZoom 1.5s ease-in-out infinite alternate;
 
 }
+
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(.8);
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.8);
+        opacity:.5;
+
+    }
+
+}
+
+
 
 @keyframes loaderIntro{
 
