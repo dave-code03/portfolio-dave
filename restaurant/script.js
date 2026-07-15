@@ -33,18 +33,17 @@ function initLoader() {
 
     if (!loader) return;
 
-    window.addEventListener("load", () => {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
 
-        loader.style.opacity = "0";
-
-        setTimeout(() => {
-            loader.remove();
-        }, 600);
-
-    });
+    setTimeout(() => {
+        loader.remove();
+    }, 600);
 
 }
-
+window.addEventListener("load", () => {
+    init();
+});
 /* =========================================
    MOBILE MENU
 ========================================= */
