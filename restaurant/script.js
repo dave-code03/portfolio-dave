@@ -27,23 +27,36 @@ window.addEventListener("load", () => {
 /* =========================================
    LOADER
 ========================================= */
-function initLoader() {
+function initLoader(){
 
-    const loader = document.getElementById("loader");
+    const loader=document.getElementById("loader");
+    const flash=document.getElementById("flash");
 
-    if (!loader) return;
+    if(!loader) return;
 
-    loader.style.opacity = "0";
-    loader.style.visibility = "hidden";
+    window.addEventListener("load",()=>{
 
-    setTimeout(() => {
-        loader.remove();
-    }, 600);
+        setTimeout(()=>{
+
+            flash.classList.add("show");
+
+        },1700);
+
+        setTimeout(()=>{
+
+            loader.style.opacity="0";
+
+        },1800);
+
+        setTimeout(()=>{
+
+            loader.remove();
+
+        },2400);
+
+    });
 
 }
-window.addEventListener("load", () => {
-    init();
-});
 /* =========================================
    MOBILE MENU
 ========================================= */
