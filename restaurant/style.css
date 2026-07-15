@@ -1808,13 +1808,31 @@ nav ul li a.active{
 
     z-index:99999;
 
+   overflow:hidden;
+
     transition:opacity .6s ease;
 
 }
 
 .loader-logo{
 
-    position:relative;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.loader-logo img{
+
+    width:22vw;
+
+    min-width:180px;
+
+    max-width:320px;
+
+    animation:loaderIntro 2.2s ease forwards;
 
 }
 
@@ -1833,77 +1851,6 @@ nav ul li a.active{
     animation:pulseGlow 2s ease infinite;
 
     z-index:-1;
-
-}
-
-.loader-logo img{
-
-    width:180px;
-
-    max-width:45vw;
-
-    animation:loaderZoom 1.5s ease-in-out infinite alternate;
-
-}
-
-@keyframes pulseGlow{
-
-    0%{
-
-        transform:scale(.8);
-        opacity:.5;
-
-    }
-
-    50%{
-
-        transform:scale(1.2);
-        opacity:1;
-
-    }
-
-    100%{
-
-        transform:scale(.8);
-        opacity:.5;
-
-    }
-
-}
-
-
-
-@keyframes loaderIntro{
-
-    0%{
-
-        transform:scale(.3);
-
-        opacity:0;
-
-    }
-
-    20%{
-
-        opacity:1;
-
-    }
-
-    75%{
-
-        transform:scale(1);
-
-        opacity:1;
-
-    }
-
-    100%{
-
-        transform:scale(9);
-
-        opacity:0;
-
-    }
 
 }
 
@@ -1942,6 +1889,31 @@ nav ul li a.active{
 }
 
 /* ===== ANIMATIONS ===== */
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(.8);
+        opacity:.5;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(.8);
+        opacity:.5;
+
+    }
+
+}
+
 @keyframes loaderZoom{
 
     from{
@@ -1953,6 +1925,38 @@ nav ul li a.active{
     to{
 
         transform:scale(1.05);
+
+    }
+
+}
+
+@keyframes loaderIntro{
+
+    0%{
+
+        transform:scale(.4);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    70%{
+
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        transform:scale(18);
+
+        opacity:0;
 
     }
 
