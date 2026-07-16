@@ -43,31 +43,19 @@ function initLoader(){
 
     window.addEventListener("load",()=>{
 
-        setTimeout(()=>{
+    setTimeout(() => {
 
-            flash.classList.add("show");
+        loader.style.opacity = "0";
 
-        },1700);
+        loader.style.visibility = "hidden";
 
-        setTimeout(() => {
+    }, 4300);
 
-    loader.style.opacity="0";
+    setTimeout(() => {
 
-},4300);
+        loader.remove();
 
-setTimeout(() => {
-
-    loader.remove();
-
-},4800);
-
-setTimeout(()=>{
-
-    loader.remove();
-
-    document.body.classList.add("loaded");
-
-},2400);
+    }, 4800);
 
 /* =========================================
    MOBILE MENU
