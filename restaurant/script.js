@@ -42,17 +42,15 @@ function initLoader(){
 
     setTimeout(() => {
 
-        loader.style.opacity = "0";
+    document.body.classList.add("loaded");
 
-        loader.style.visibility = "hidden";
+},4500);
 
-    }, 4300);
+setTimeout(() => {
 
-    setTimeout(() => {
+    loader.remove();
 
-        loader.remove();
-
-    }, 4800);
+},4800);
 
 }
 /* =========================================
