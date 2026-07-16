@@ -50,74 +50,77 @@ function initLoader() {
     });
 
 }
-
 /* =========================================
    MOBILE MENU
 ========================================= */
 
 function initMenu() {
 
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector("nav ul");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
     const icon = document.querySelector(".menu-toggle i");
 
-    if (!toggle || !menu || !icon) return;
+    if (!menuToggle || !navMenu || !icon) return;
 
-    toggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
 
-        menu.classList.toggle("active");
+        navMenu.classList.toggle("active");
 
-        if (menu.classList.contains("active")) {
+        if (navMenu.classList.contains("active")) {
 
-            icon.classList.replace("fa-bars", "fa-xmark");
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
 
         } else {
 
-            icon.classList.replace("fa-xmark", "fa-bars");
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
 
         }
 
     });
 
-    document.querySelectorAll("nav ul a").forEach(link => {
+    document.querySelectorAll("nav ul li a").forEach(link => {
 
         link.addEventListener("click", () => {
 
-            menu.classList.remove("active");
+            navMenu.classList.remove("active");
 
-            icon.classList.replace("fa-xmark", "fa-bars");
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
 
         });
 
     });
 
 }
-
 /* =========================================
    BACK TO TOP
 ========================================= */
 
 function initBackToTop() {
 
-    const button = document.getElementById("backToTop");
+    const backToTop = document.getElementById("backToTop");
 
-    if (!button) return;
+    if (!backToTop) return;
 
     window.addEventListener("scroll", () => {
 
         if (window.scrollY > 350) {
 
-            button.classList.add("show");
+            backToTop.classList.add("show");
 
         } else {
 
-            button.classList.remove("show");
+            backToTop.classList.remove("show");
 
         }
 
     });
 
-    button.addEventListener("click", () => {
+    backToTop.addEventListener("click", (e) => {
+
+        e.preventDefault();
 
         window.scrollTo({
 
@@ -129,17 +132,16 @@ function initBackToTop() {
     });
 
 }
-
 /* =========================================
-   ACTIVE NAV
+   ACTIVE NAVIGATION
 ========================================= */
 
 function initActiveLinks() {
 
     const sections = document.querySelectorAll("section[id]");
-    const links = document.querySelectorAll("nav ul a");
+    const navLinks = document.querySelectorAll("nav ul li a");
 
-    if (!sections.length) return;
+    if (!sections.length || !navLinks.length) return;
 
     window.addEventListener("scroll", () => {
 
@@ -147,9 +149,13 @@ function initActiveLinks() {
 
         sections.forEach(section => {
 
-            const top = section.offsetTop - 150;
+            const sectionTop = section.offsetTop - 140;
+            const sectionHeight = section.offsetHeight;
 
-            if (window.scrollY >= top) {
+            if (
+                window.scrollY >= sectionTop &&
+                window.scrollY < sectionTop + sectionHeight
+            ) {
 
                 current = section.id;
 
@@ -157,7 +163,7 @@ function initActiveLinks() {
 
         });
 
-        links.forEach(link => {
+        navLinks.forEach(link => {
 
             link.classList.remove("active");
 
@@ -172,31 +178,44 @@ function initActiveLinks() {
     });
 
 }
-
 /* =========================================
    SCROLL REVEAL
 ========================================= */
 
 function initScrollReveal() {
 
-    const hidden = document.querySelectorAll(".hidden");
+    const hiddenElements = document.querySelectorAll(".hidden");
 
-    if (!hidden.length) return;
+    if (!hiddenElements.length) return;
 
-    const observer = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver(
 
-        entries.forEach(entry => {
+        (entries) => {
 
-            if (entry.isIntersecting) {
+            entries.forEach(entry => {
 
-                entry.target.classList.add("show");
+                if (entry.isIntersecting) {
 
-            }
+                    entry.target.classList.add("show");
 
-        });
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
+        }
+
+    );
+
+    hiddenElements.forEach(element => {
+
+        observer.observe(element);
 
     });
-
-    hidden.forEach(item => observer.observe(item));
 
 }
