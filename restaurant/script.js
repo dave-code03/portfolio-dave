@@ -22,7 +22,15 @@ function initLoader() {
 
     const loader = document.getElementById("loader");
 
-    if (!loader) 
+    if (!loader) return;
+
+    window.addEventListener("load", () => {
+
+        setTimeout(() => {
+
+            document.body.classList.add("loaded");
+
+            loader.style.opacity = "0";
             loader.style.visibility = "hidden";
 
         }, 4300);
@@ -126,33 +134,44 @@ function initBackToTop() {
    ACTIVE NAV
 ========================================= */
 
+function initActiveLinks() {
 
+    const sections = document.querySelectorAll("section[id]");
+    const links = document.querySelectorAll("nav ul a");
 
-const navbar = document.querySelector(".navbar");
+    if (!sections.length) return;
 
-let lastScroll = 0;
+    window.addEventListener("scroll", () => {
 
-window.addEventListener("scroll", () => {
+        let current = "";
 
-    const currentScroll = window.pageYOffset;
+        sections.forEach(section => {
 
-    if(currentScroll <= 50){
+            const top = section.offsetTop - 150;
 
-        navbar.classList.remove("hide");
+            if (window.scrollY >= top) {
 
-    }else if(currentScroll > lastScroll){
+                current = section.id;
 
-        navbar.classList.add("hide");
+            }
 
-    }else{
+        });
 
-        navbar.classList.remove("hide");
+        links.forEach(link => {
 
-    }
+            link.classList.remove("active");
 
-    lastScroll = currentScroll;
+            if (link.getAttribute("href") === "#" + current) {
 
-});
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+}
 
 /* =========================================
    SCROLL REVEAL
