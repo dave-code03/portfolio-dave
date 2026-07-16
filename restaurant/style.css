@@ -124,29 +124,21 @@ button{
 
 .navbar{
 
-    position:sticky;
+    position:fixed;
     top:0;
     left:0;
 
     width:100%;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    transition:.4s;
 
-    padding:18px 8%;
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(12px);
-    transition:transform .4s ease;
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
-
-    z-index:1000;
+    z-index:999;
 
 }
 
 .navbar.hide{
 
-    transform:translateY(-100%);
+    transform:translateY(-120%);
 
 }
 
