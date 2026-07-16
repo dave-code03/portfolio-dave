@@ -80,15 +80,16 @@ body.loaded .hero-image{
 
 }
 
+header,
 main,
 footer{
 
     opacity:0;
-    background:#FFF8E7;
     transition:opacity .8s ease;
 
 }
 
+body.loaded header,
 body.loaded main,
 body.loaded footer{
 
