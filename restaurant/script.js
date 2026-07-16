@@ -37,11 +37,8 @@ window.addEventListener("load", () => {
 function initLoader(){
 
     const loader=document.getElementById("loader");
-    const flash=document.getElementById("flash");
 
     if(!loader) return;
-
-    window.addEventListener("load",()=>{
 
     setTimeout(() => {
 
@@ -57,6 +54,7 @@ function initLoader(){
 
     }, 4800);
 
+}
 /* =========================================
    MOBILE MENU
 ========================================= */
