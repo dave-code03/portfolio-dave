@@ -3,1269 +3,359 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
 
-<meta
-name="description"
-content="Dave Occeant - Front-End Developer specializing in HTML, CSS and JavaScript. Building modern responsive websites.">
+    <!-- Responsive Design -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-<meta
-name="keywords"
-content="Front-End Developer, HTML, CSS, JavaScript, Portfolio">
-   
-<meta
-name="author"
-content="Dave Occeant">
+    <!-- Page Title -->
+    <title>
+        Dave Occéant | Front-End Developer
+    </title>
 
-<meta property="og:title"
-content="Dave Occeant | Front-End Developer">
+    <!-- SEO Description -->
+    <meta
+        name="description"
+        content="Portfolio of Dave Occéant, Front-End Developer specializing in HTML5, CSS3 and JavaScript.">
 
-<meta property="og:description"
-content="Modern Responsive Websites built with HTML CSS JavaScript">
+    <!-- SEO Keywords -->
+    <meta
+        name="keywords"
+        content="Dave Occéant, Front-End Developer, HTML, CSS, JavaScript, Portfolio, Responsive Website">
 
-<meta property="og:image"
-content="images/preview.png">
+    <!-- Author -->
+    <meta
+        name="author"
+        content="Dave Occéant">
 
-<meta property="og:type"
-content="website">
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Dave Occéant | Front-End Developer">
 
-<meta name="twitter:card"
-content="summary_large_image">
-   
-<title>Dave Occeant | Front-End Developer</title>
+    <meta
+        property="og:description"
+        content="Modern Front-End Developer Portfolio.">
 
-<link rel="stylesheet" href="style.css">
+    <meta
+        property="og:image"
+        content="images/preview.png">
 
-<link rel="icon" type="image/png" href="images/favicon.png">
-   
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta
+        property="og:type"
+        content="website">
 
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-   
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css">
+
 </head>
 
-<body>
+   <body>
 
-<!-- ========================= -->
-<!--         LOADER            -->
-<!-- ========================= -->
+   <!-- =========================
+        LOADER
+========================== -->
 
 <div id="loader">
 
-<div class="spinner"></div>
+    <div class="loader-content">
+
+        <img
+            src="images/logo.png"
+            alt="Dave Logo"
+            class="loader-logo">
+
+        <h1>
+
+            Dave Occéant
+
+        </h1>
+
+        <p>
+
+            Front-End Developer
+
+        </p>
+
+        <span>
+
+            Creating Modern Web Experiences
+
+        </span>
+
+        <div class="loader-progress">
+
+            <div class="loader-bar"></div>
+
+        </div>
+
+    </div>
 
 </div>
 
-<!-- ========================= -->
-<!--         NAVBAR            -->
-<!-- ========================= -->
+   <!-- =========================
+         HEADER
+========================= -->
 
 <header>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<div class="logo">
+        <!-- Logo -->
 
-<a href="#home">
+        <a href="index.html" class="logo">
 
-Dave<span>.</span>
+            <img
+                src="images/logo.png"
+                alt="Dave Occeant Logo">
 
-</a>
+        </a>
 
-</div>
+        <!-- Navigation -->
 
-<ul class="nav-links">
+        <ul class="nav-links">
 
-<li><a href="#home">Home</a></li>
+            <li>
 
-<li><a href="#about">About</a></li>
+                <a href="index.html">
 
-<li><a href="#journey">Journey</a></li>
+                    Home
 
-<li><a href="#services">Services</a></li>
+                </a>
 
-<li><a href="#projects">Projects</a></li>
+            </li>
 
-<li><a href="#contact">Contact</a></li>
+            <li>
 
-</ul>
+                <a href="about.html">
 
-<div class="nav-actions">
+                    About
 
-<button class="theme-btn">
+                </a>
 
-<i class="fa-solid fa-moon"></i>
+            </li>
 
-</button>
+            <li>
 
-<a
-href="mailto:davecode03@gmail.com"
-class="hire-btn">
+                <a href="projects.html">
 
-Hire Me
+                    Projects
 
-</a>
+                </a>
 
-<div class="menu-icon">
+            </li>
 
-<i class="fa-solid fa-bars"></i>
+            <li>
 
-</div>
+                <a href="contact.html">
 
-</div>
+                    Contact
 
-</nav>
+                </a>
+
+            </li>
+
+        </ul>
+
+        <!-- Button -->
+
+        <a
+            href="contact.html"
+            class="btn-nav">
+
+            Hire Me
+
+        </a>
+
+        <!-- Mobile -->
+
+        <div class="menu-toggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
 
 </header>
 
-<!-- ========================= -->
-<!--       HERO SECTION        -->
-<!-- ========================= -->
+     <main>
 
-<section
-id="home"
-class="hero">
-
-<div class="hero-left">
-
-<p class="mini-title">
-
-<i class="fa-solid fa-circle-check"></i>
-
-Available For Freelance
-
-</p>
-
-<h1>
-
-Hi,
-
-I'm
-
-<span>Dave Occeant</span>
-
-</h1>
-
-<h2 class="typing-title">
-
-<span id="typing-text"></span>
-
-<span class="cursor">|</span>
-
-</h2>
-
-<p>
-
-I build modern, responsive and user-friendly websites using HTML, CSS and JavaScript.
-
-My goal is to transform ideas into clean digital experiences that help businesses grow.
-
-</p>
-
-<div class="hero-buttons">
-
-<a
-href="mailto:davecode03@gmail.com"
-class="btn-primary">
-
-Hire Me
-
-</a>
-
-<a
-href="#projects"
-class="btn-secondary">
-
-View Projects
-
-</a>
-
-<a
-href="cv.pdf"
-download
-class="btn-cv">
-
-Download CV
-
-</a>
-
-</div>
-
-<div class="hero-socials">
-
-<a
-href="https://github.com/dave-code03"
-target="_blank">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-<a
-href="https://www.linkedin.com/in/dave-occeant-40a382420"
-target="_blank">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-<a
-href="mailto:davecode03@gmail.com">
-
-<i class="fa-solid fa-envelope"></i>
-
-</a>
-
-<a
-href="https://wa.me/18293126046"
-target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<img
-src="images/IMG_0317.png"
-alt="Dave Occeant">
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!--        HERO STATS         -->
+   <!-- ========================= -->
+<!--        HERO SECTION       -->
 <!-- ========================= -->
 
-<section class="hero-stats">
+<section id="home" class="hero">
 
-<div class="stat-box">
+    <!-- LEFT SIDE -->
 
-<h3>
+    <div class="hero-left">
 
-5+
+        <p class="hero-badge">
 
-</h3>
+            <i class="fa-solid fa-circle-check"></i>
 
-<p>
+            Available For Freelance
 
-Projects
+        </p>
 
-</p>
+        <h1>
 
-</div>
+            Hi, I'm
 
-<div class="stat-box">
+            <span>Dave Occéant</span>
 
-<h3>
+        </h1>
 
-95%
+        <h2 class="typing-title">
 
-</h3>
+            <span id="typing-text"></span>
 
-<p>
+            <span class="cursor">|</span>
 
-HTML5
+        </h2>
 
-</p>
+        <p class="hero-description">
 
-</div>
+            I create fast, modern and responsive websites focused on clean design, smooth user experience and high-quality front-end development.
 
-<div class="stat-box">
+        </p>
 
-<h3>
+        <div class="hero-buttons">
 
-90%
+            <a href="contact.html" class="btn-primary">
 
-</h3>
+                Hire Me
 
-<p>
+            </a>
 
-CSS3
+            <a href="projects.html" class="btn-secondary">
 
-</p>
+                View Projects
 
-</div>
+            </a>
 
-<div class="stat-box">
+            <a href="cv/Dave-Occeant-CV.pdf"
+               download
+               class="btn-cv">
 
-<h3>
+                Download CV
 
-80%
+            </a>
 
-</h3>
+        </div>
 
-<p>
+        <div class="hero-info">
 
-JavaScript
+            <span>
 
-</p>
+                ✔ Responsive Design
 
-</div>
+            </span>
+
+            <span>
+
+                ✔ Clean Code
+
+            </span>
+
+            <span>
+
+                ✔ Fast Performance
+
+            </span>
+
+        </div>
+
+        <div class="hero-socials">
+
+            <a href="https://github.com/dave-code03"
+               target="_blank">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank">
+
+                <i class="fab fa-linkedin-in"></i>
+
+            </a>
+
+            <a href="https://wa.me/18293126046"
+               target="_blank">
+
+                <i class="fab fa-whatsapp"></i>
+
+            </a>
+
+            <a href="mailto:davecode03@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="hero-right">
+
+        <div class="hero-image">
+
+            <img
+                src="images/profile.png"
+                alt="Dave Occéant">
+
+        </div>
+
+    </div>
 
 </section>
 
-   <!-- ========================================= -->
-<!--              ABOUT SECTION                -->
-<!-- ========================================= -->
+     </main>
 
-<section id="about" class="about section">
-
-<div class="section-title">
-
-<h2>About Me</h2>
-
-<p>Get to know me better</p>
-
-</div>
-
-<div class="about-container">
-
-<div class="about-image">
-
-<img
-src="images/IMG_0317.png"
-alt="Dave Occeant">
-
-</div>
-
-<div class="about-content">
-
-<h3>
-
-Front-End Developer
-
-</h3>
-
-<p>
-
-Hello! I'm <strong>Dave Occeant</strong>, a passionate Front-End Developer based in the Dominican Republic.
-
-I enjoy building modern, responsive and user-friendly websites using HTML, CSS and JavaScript.
-
-</p>
-
-<p>
-
-My mission is to create clean digital experiences while continuously improving my skills and working with international clients.
-
-</p>
-
-<div class="about-info">
-
-<div>
-
-<h4>Location</h4>
-
-<span>Dominican Republic</span>
-
-</div>
-
-<div>
-
-<h4>Email</h4>
-
-<span>davecode03@gmail.com</span>
-
-</div>
-
-<div>
-
-<h4>Freelance</h4>
-
-<span>Available</span>
-
-</div>
-
-<div>
-
-<h4>Experience</h4>
-
-<span>Front-End Development</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--             MY JOURNEY                    -->
-<!-- ========================================= -->
-
-<section id="journey" class="journey section">
-
-<div class="section-title">
-
-<h2>My Journey</h2>
-
-<p>My learning path</p>
-
-</div>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<div class="circle"></div>
-
-<div class="timeline-content">
-
-<h3>Started Programming</h3>
-
-<p>
-
-Began learning the fundamentals of HTML.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="circle"></div>
-
-<div class="timeline-content">
-
-<h3>Learned CSS</h3>
-
-<p>
-
-Built responsive layouts and modern interfaces.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="circle"></div>
-
-<div class="timeline-content">
-
-<h3>JavaScript</h3>
-
-<p>
-
-Added interactivity and dynamic functionality.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="circle"></div>
-
-<div class="timeline-content">
-
-<h3>Portfolio</h3>
-
-<p>
-
-Created my professional portfolio website.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<div class="circle"></div>
-
-<div class="timeline-content">
-
-<h3>Freelance Ready</h3>
-
-<p>
-
-Ready to work with clients worldwide.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--            WHY CHOOSE ME                  -->
-<!-- ========================================= -->
-
-<section class="why section">
-
-<div class="section-title">
-
-<h2>
-
-Why Choose Me
-
-</h2>
-
-<p>
-
-Why clients should work with me
-
-</p>
-
-</div>
-
-<div class="why-grid">
-
-<div class="why-card">
-
-<i class="fa-solid fa-mobile-screen"></i>
-
-<h3>
-
-Responsive Design
-
-</h3>
-
-<p>
-
-Websites that look great on every device.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-bolt"></i>
-
-<h3>
-
-Fast Performance
-
-</h3>
-
-<p>
-
-Optimized websites for speed and user experience.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-code"></i>
-
-<h3>
-
-Clean Code
-
-</h3>
-
-<p>
-
-Organized, readable and maintainable code.
-
-</p>
-
-</div>
-
-<div class="why-card">
-
-<i class="fa-solid fa-headset"></i>
-
-<h3>
-
-Support
-
-</h3>
-
-<p>
-
-Friendly communication and reliable assistance.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--           TECHNOLOGIES                    -->
-<!-- ========================================= -->
-
-<section class="technologies section">
-
-<div class="section-title">
-
-<h2>
-
-Technologies
-
-</h2>
-
-<p>
-
-Tools I work with
-
-</p>
-
-</div>
-
-<div class="tech-grid">
-
-<div class="tech-card">
-
-<i class="fa-brands fa-html5"></i>
-
-<h3>HTML5</h3>
-
-</div>
-
-<div class="tech-card">
-
-<i class="fa-brands fa-css3-alt"></i>
-
-<h3>CSS3</h3>
-
-</div>
-
-<div class="tech-card">
-
-<i class="fa-brands fa-js"></i>
-
-<h3>JavaScript</h3>
-
-</div>
-
-<div class="tech-card">
-
-<i class="fa-brands fa-git-alt"></i>
-
-<h3>Git</h3>
-
-</div>
-
-<div class="tech-card">
-
-<i class="fa-brands fa-github"></i>
-
-<h3>GitHub</h3>
-
-</div>
-
-<div class="tech-card">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h3>Responsive Design</h3>
-
-</div>
-
-</div>
-
-</section>
-
-    <!-- ========================================= -->
-<!--            SERVICES SECTION               -->
-<!-- ========================================= -->
-
-<section id="services" class="services section">
-
-<div class="section-title">
-
-<h2>Services</h2>
-
-<p>What I Can Do For You</p>
-
-</div>
-
-<div class="services-grid">
-
-<div class="service-card">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h3>Website Development</h3>
-
-<p>
-
-Modern and responsive websites built with HTML, CSS and JavaScript.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-mobile-screen-button"></i>
-
-<h3>Responsive Design</h3>
-
-<p>
-
-Your website will look perfect on desktop, tablet and mobile devices.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-palette"></i>
-
-<h3>UI Design</h3>
-
-<p>
-
-Clean, modern and user-friendly interfaces focused on user experience.
-
-</p>
-
-</div>
-
-<div class="service-card">
-
-<i class="fa-solid fa-gauge-high"></i>
-
-<h3>Performance</h3>
-
-<p>
-
-Fast loading pages optimized for better SEO and user experience.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--             SKILLS SECTION                -->
-<!-- ========================================= -->
-
-<section id="skills" class="skills section">
-
-<div class="section-title">
-
-<h2>Skills</h2>
-
-<p>Technical Skills</p>
-
-</div>
-
-<div class="skills-container">
-
-<div class="skill-box">
-
-<div class="skill-title">
-
-<span>HTML5</span>
-
-<span>95%</span>
-
-</div>
-
-<div class="progress">
-
-<div class="progress-bar html"></div>
-
-</div>
-
-</div>
-
-<div class="skill-box">
-
-<div class="skill-title">
-
-<span>CSS3</span>
-
-<span>90%</span>
-
-</div>
-
-<div class="progress">
-
-<div class="progress-bar css"></div>
-
-</div>
-
-</div>
-
-<div class="skill-box">
-
-<div class="skill-title">
-
-<span>JavaScript</span>
-
-<span>80%</span>
-
-</div>
-
-<div class="progress">
-
-<div class="progress-bar js"></div>
-
-</div>
-
-</div>
-
-<div class="skill-box">
-
-<div class="skill-title">
-
-<span>Responsive Design</span>
-
-<span>95%</span>
-
-</div>
-
-<div class="progress">
-
-<div class="progress-bar responsive"></div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--            PROJECTS SECTION               -->
-<!-- ========================================= -->
-
-<section id="projects" class="projects section">
-
-<div class="section-title">
-
-<h2>Featured Projects</h2>
-
-<p>Some of My Recent Work</p>
-
-</div>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<img
-src="images/novatech.png"
-alt="NovaTech">
-
-<div class="project-content">
-
-<h3>NovaTech</h3>
-
-<p>
-
-Modern Landing Page created using HTML, CSS and JavaScript.
-
-</p>
-
-<div class="project-tech">
-
-<span>HTML5</span>
-
-<span>CSS3</span>
-
-<span>JavaScript</span>
-
-</div>
-
-<a
-href="https://dave-code03.github.io/portfolio-dave/novatech/"
-target="_blank"
-class="project-btn">
-
-View Project
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img
-src="images/restaurant.jpg"
-alt="Restaurant">
-
-<div class="project-content">
-
-<h3>Restaurant Website</h3>
-
-<p>
-
-Responsive Restaurant Website with modern design.
-
-</p>
-
-<div class="project-tech">
-
-<span>HTML5</span>
-
-<span>CSS3</span>
-
-<span>JavaScript</span>
-
-</div>
-
-<a
-href="#"
-class="project-btn">
-
-Coming Soon
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--          TESTIMONIALS SECTION             -->
-<!-- ========================================= -->
-
-<section class="testimonials section">
-
-<div class="section-title">
-
-<h2>Testimonials</h2>
-
-<p>What People Say</p>
-
-</div>
-
-<div class="testimonial-grid">
-
-<div class="testimonial-card">
-
-<i class="fa-solid fa-quote-left"></i>
-
-<p>
-
-Very professional developer with clean code and excellent communication.
-
-</p>
-
-<h4>
-
-Future Client
-
-</h4>
-
-</div>
-
-<div class="testimonial-card">
-
-<i class="fa-solid fa-quote-left"></i>
-
-<p>
-
-Beautiful website with responsive design and smooth animations.
-
-</p>
-
-<h4>
-
-Future Client
-
-</h4>
-
-</div>
-
-<div class="testimonial-card">
-
-<i class="fa-solid fa-quote-left"></i>
-
-<p>
-
-Highly recommended for modern Front-End development projects.
-
-</p>
-
-<h4>
-
-Future Client
-
-</h4>
-
-</div>
-
-</div>
-
-</section>
-
-    <!-- ========================================= -->
-<!--            CONTACT SECTION                -->
-<!-- ========================================= -->
-
-<section id="contact" class="contact section">
-
-<div class="section-title">
-
-<h2>Contact Me</h2>
-
-<p>Let's Build Something Amazing Together</p>
-
-</div>
-
-<div class="contact-container">
-
-<div class="contact-info">
-
-<h3>Get In Touch</h3>
-
-<p>
-
-I'm available for freelance work and collaborations.
-
-Feel free to contact me anytime.
-
-</p>
-
-<div class="contact-item">
-
-<i class="fa-solid fa-envelope"></i>
-
-<span>davecode03@gmail.com</span>
-
-</div>
-
-<div class="contact-item">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-<span>+1 (829) 312-6046</span>
-
-</div>
-
-<div class="contact-item">
-
-<i class="fa-solid fa-location-dot"></i>
-
-<span>Dominican Republic</span>
-
-</div>
-
-<div class="contact-social">
-
-<a href="https://github.com/dave-code03" target="_blank">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-<a href="https://www.linkedin.com/in/dave-occeant-40a382420" target="_blank">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-<a href="https://wa.me/18293126046" target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<a href="mailto:davecode03@gmail.com">
-
-<i class="fa-solid fa-envelope"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<form class="contact-form">
-
-<input
-type="text"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-placeholder="Your Email"
-required>
-
-<input
-type="text"
-placeholder="Subject"
-required>
-
-<textarea
-placeholder="Your Message"
-required></textarea>
-
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- ========================================= -->
-<!--          BACK TO TOP BUTTON               -->
-<!-- ========================================= -->
-
-<button id="backToTop">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<!-- ========================================= -->
-<!--            PROJECT MODAL                  -->
-<!-- ========================================= -->
-
-<div id="projectModal" class="modal">
-
-<div class="modal-content">
-
-<span class="close-modal">&times;</span>
-
-<h2>Project Details</h2>
-
-<p>
-
-This project was developed using HTML5, CSS3 and JavaScript with responsive design and modern UI principles.
-
-</p>
-
-<a
-href="#"
-class="project-btn">
-
-Visit Project
-
-</a>
-
-</div>
-
-</div>
-
-<!-- ========================================= -->
-<!--               FOOTER                      -->
-<!-- ========================================= -->
-
-<footer>
-
-<div class="footer-content">
-
-<h2>
-
-Dave<span>.</span>
-
-</h2>
-
-<p>
-
-Front-End Developer
-
-Building modern responsive websites.
-
-</p>
-
-<div class="footer-links">
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#services">Services</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-<div class="footer-social">
-
-<a href="https://github.com/dave-code03">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-<a href="https://www.linkedin.com/in/dave-occeant-40a382420">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-<a href="mailto:davecode03@gmail.com">
-
-<i class="fa-solid fa-envelope"></i>
-
-</a>
-
-<a href="https://wa.me/18293126046">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-</div>
-
-<p class="copyright">
-
-© 2026 Dave Occeant.
-
-All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
+   </body>
 
 </html>
