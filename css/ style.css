@@ -213,3 +213,24 @@ ul{
     color:var(--dark);
 
 }
+
+/* ==========================================
+   LOADER UTILITIES
+========================================== */
+
+body.loading{
+
+    overflow:hidden;
+
+}
+
+#loader.hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
