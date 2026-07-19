@@ -234,3 +234,32 @@ body.loading{
 
 }
 
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+
+    transition:var(--transition);
+
+}
+
