@@ -1,1 +1,95 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+/* Loaded from HTML */
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+    --primary:#ff6b35;
+
+    --secondary:#ff8f50;
+
+    --dark:#1f1f1f;
+
+    --light:#ffffff;
+
+    --gray:#666666;
+
+    --bg:#f8f9fb;
+
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+
+    --transition:.35s ease;
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ==========================================
+   BASE
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:"Poppins",sans-serif;
+
+    background:var(--light);
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
 
