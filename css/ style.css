@@ -548,3 +548,190 @@ header.scrolled{
     margin-bottom:40px;
 
 }
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-image{
+
+    position:relative;
+
+    width:420px;
+
+    height:520px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:40px;
+
+    background:#ffffff;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.12);
+
+    overflow:hidden;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        #ffb347,
+
+        #ffffff
+
+    );
+
+    z-index:-1;
+
+}
+
+.hero-image::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(255,107,53,.12);
+
+    border-radius:50%;
+
+    bottom:-70px;
+
+    right:-60px;
+
+    filter:blur(60px);
+
+}
+
+.hero-image{
+
+    transition:transform .4s ease;
+
+}
+
+.hero-image:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+.btn-primary{
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--secondary);
+
+}
+
+.btn-secondary{
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.btn-cv{
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    background:#222;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-cv:hover{
+
+    background:#000;
+
+    transform:translateY(-4px);
+
+}
+
