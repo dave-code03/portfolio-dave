@@ -358,3 +358,43 @@ header{
     background:var(--secondary);
 
 }
+
+/* ==========================================
+   NAVBAR ACTIVE LINK
+========================================== */
+
+.nav-links a.active{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   MENU TOGGLE
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:28px;
+
+    color:var(--dark);
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   SCROLLED NAVBAR
+========================================== */
+
+header.scrolled{
+
+    background:#ffffff;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
