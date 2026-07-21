@@ -129,7 +129,29 @@
 /* ==========================================
    CARDS
 ========================================== */
+.project-card{
 
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.skill-card{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.value-card{
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+.contact-card{
+
+    animation:fadeUp 1s ease forwards;
+
+}
 /* ==========================================
    SCROLL ANIMATIONS
 ========================================== */
