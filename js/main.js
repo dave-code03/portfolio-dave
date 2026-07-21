@@ -1,5 +1,13 @@
 "use strict";
 
+/* ==========================================
+   ELEMENT REFERENCES
+========================================== */
+
+const loader = document.querySelector(".loader");
+
+const backToTop = document.getElementById("backToTop");
+
 console.log("Dave Dev Portfolio initialized.");
 
 /* ==========================================
