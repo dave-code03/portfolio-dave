@@ -6,7 +6,15 @@
    LARGE LAPTOPS
    (1400px and below)
 ========================================== */
+@media (max-width:1400px){
 
+    .container{
+
+        width:90%;
+
+    }
+
+}
 /* ==========================================
    LAPTOPS
    (1200px and below)
