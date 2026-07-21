@@ -11,6 +11,18 @@ const backToTop = document.getElementById("backToTop");
 console.log("Dave Dev Portfolio initialized.");
 
 /* ==========================================
+   FUNCTIONS
+========================================== */
+
+function hideLoader() {
+
+    if (!loader) return;
+
+    loader.classList.add("hidden");
+
+}
+
+/* ==========================================
    PORTFOLIO MAIN JAVASCRIPT
 ========================================== */
 
