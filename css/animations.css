@@ -161,7 +161,7 @@
 
     transform:translateY(40px);
 
-    transition:all .8s ease;
+    transition:all var(--transition);
 
 }
 
