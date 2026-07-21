@@ -36,3 +36,13 @@ window.addEventListener("load", () => {
     loader.classList.add("loader-hidden");
 
 });
+
+/* ==========================================
+   INITIALIZATION
+========================================== */
+
+window.addEventListener("load", () => {
+
+    hideLoader();
+
+});
