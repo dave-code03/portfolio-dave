@@ -1,6 +1,3 @@
-/* ==========================================
-   PORTFOLIO MAIN JAVASCRIPT
-========================================== */
 "use strict";
 
 /* ==========================================
@@ -8,10 +5,8 @@
 ========================================== */
 
 const loader = document.querySelector(".loader");
-
 const backToTop = document.getElementById("backToTop");
 
-console.log("Dave Dev Portfolio initialized.");
 
 /* ==========================================
    FUNCTIONS
@@ -25,17 +20,6 @@ function hideLoader() {
 
 }
 
-/* ==========================================
-   LOADER
-========================================== */
-
-window.addEventListener("load", () => {
-
-    const loader = document.getElementById("loader");
-
-    loader.classList.add("loader-hidden");
-
-});
 
 /* ==========================================
    INITIALIZATION
@@ -43,6 +27,13 @@ window.addEventListener("load", () => {
 
 window.addEventListener("load", () => {
 
-    hideLoader();
+    setTimeout(() => {
+
+        hideLoader();
+
+    }, 800);
 
 });
+
+
+console.log("Dave Dev Portfolio initialized.");
