@@ -1,3 +1,7 @@
+"use strict";
+
+console.log("Dave Dev Portfolio initialized.");
+
 /* ==========================================
    PORTFOLIO MAIN JAVASCRIPT
 ========================================== */
