@@ -159,3 +159,16 @@
 /* ==========================================
    HOVER EFFECTS
 ========================================== */
+.project-card:hover,
+
+.skill-card:hover,
+
+.value-card:hover,
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:.35s ease;
+
+}
