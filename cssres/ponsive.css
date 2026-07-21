@@ -44,7 +44,35 @@
    TABLETS
    (992px and below)
 ========================================== */
+@media (max-width:992px){
 
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        order:2;
+
+    }
+
+    .hero-image{
+
+        order:1;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+}
 /* ==========================================
    SMALL TABLETS
    (768px and below)
