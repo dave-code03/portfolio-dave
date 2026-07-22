@@ -11,23 +11,55 @@
 
 const App = {
 
+    /* ==========================================
+       DOM REFERENCES
+    ========================================== */
+
     cacheDOM() {
 
-        console.log("DOM Ready");
+        this.loader = document.getElementById("loader");
 
     },
+
+    /* ==========================================
+       EVENTS
+    ========================================== */
 
     bindEvents() {
 
-        console.log("Events Ready");
+        // Events will be added here.
 
     },
+
+    /* ==========================================
+       FUNCTIONS
+    ========================================== */
+
+    showLoader() {
+
+        // Show loader.
+
+    },
+
+    hideLoader() {
+
+        // Hide loader.
+
+    },
+
+    /* ==========================================
+       APPLICATION START
+    ========================================== */
 
     start() {
 
-        console.log("Application Started");
+        // Application starts here.
 
     },
+
+    /* ==========================================
+       INITIALIZATION
+    ========================================== */
 
     init() {
 
@@ -37,10 +69,12 @@ const App = {
 
         this.start();
 
-        console.log("Dave Dev Portfolio initialized.");
-
     }
 
 };
+
+/* ==========================================
+   START APPLICATION
+========================================== */
 
 App.init();
