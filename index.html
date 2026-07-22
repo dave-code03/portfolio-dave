@@ -146,7 +146,8 @@
 
             <img
                 src="images/logo.png"
-                alt="Dave Occeant Logo">
+                alt="Dave Occeant Logo"
+                loading="lazy">
 
         </a>
 
@@ -156,7 +157,8 @@
 
             <li>
 
-                <a href="index.html">
+                <a href="index.html"
+                    class="active">
 
                     Home
 
@@ -200,7 +202,7 @@
 
         <a
             href="contact.html"
-            class="btn-nav">
+            class="nav-btn">
 
             Hire Me
 
@@ -224,7 +226,7 @@
        
 <main>
            
-<section id="home" class="hero">
+<section id="home" class="hero" aria-label="Hero Section">
 
     <!-- LEFT SIDE -->
 
@@ -347,7 +349,9 @@
 
             <img
                 src="images/profile.png"
-                alt="Dave Occéant">
+                alt="Dave Occéant"
+                fetchpriority="high"
+                decoding="async">
 
         </div>
 
@@ -359,13 +363,14 @@
 <!--      ABOUT SECTION        -->
 <!-- ========================= -->
 
-<section id="about" class="about">
+<section id="about" class="about" aria-label="About Me">
 
   <div class="about-image">
 
     <img
         src="images/about.jpg"
-        alt="Dave Occeant">
+        alt="Dave Occeant"
+        loading="lazy">
 
     <div class="experience-card">
 
@@ -579,7 +584,7 @@
 <!--      SKILLS SECTION       -->
 <!-- ========================= -->
 
-<section id="skills" class="skills">
+<section id="skills" class="skills" aria-label="Skills">
 
     <div class="section-title">
 
@@ -773,7 +778,7 @@
 <!--    FEATURED PROJECTS      -->
 <!-- ========================= -->
 
-<section id="projects" class="projects">
+<section id="projects" class="projects" aria-label="Projects">
 
     <div class="section-title">
 
@@ -799,7 +804,8 @@
 
     <img
         src="projects/novatech/images/preview.png"
-        alt="NovaTech">
+        alt="NovaTech"
+        loading="lazy">
 
     <div class="project-content">
 
@@ -1165,6 +1171,8 @@
 
     </h4>
 
+            <nav>
+            
     <ul>
 
         <li><a href="#home">Home</a></li>
@@ -1232,6 +1240,8 @@
         </li>
 
     </ul>
+
+        </nav>
 
 </div>
 
