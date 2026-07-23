@@ -1,80 +1,81 @@
-"use strict";
-
 /* ==========================================
-   DAVE DEV PORTFOLIO
-   Main JavaScript File
+   LOADER
 ========================================== */
 
-/* ==========================================
-   APPLICATION
-========================================== */
+window.addEventListener("load", () => {
 
-const App = {
+    const loader = document.getElementById("loader");
 
-    /* ==========================================
-       DOM REFERENCES
-    ========================================== */
+    if (loader) {
 
-    cacheDOM() {
+        loader.classList.add("hidden");
 
-        this.loader = document.getElementById("loader");
-
-    },
-
-    /* ==========================================
-       EVENTS
-    ========================================== */
-
-    bindEvents() {
-
-        // Events will be added here.
-
-    },
-
-    /* ==========================================
-       FUNCTIONS
-    ========================================== */
-
-    showLoader() {
-
-        // Show loader.
-
-    },
-
-    hideLoader() {
-
-        // Hide loader.
-
-    },
-
-    /* ==========================================
-       APPLICATION START
-    ========================================== */
-
-    start() {
-
-        // Application starts here.
-
-    },
-
-    /* ==========================================
-       INITIALIZATION
-    ========================================== */
-
-    init() {
-
-        this.cacheDOM();
-
-        this.bindEvents();
-
-        this.start();
+        document.body.classList.remove("loading");
 
     }
 
-};
+});
 
 /* ==========================================
-   START APPLICATION
+   STICKY HEADER
 ========================================== */
 
-App.init();
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+
+    if (!header) return;
+
+    if (window.scrollY > 80) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (!backToTop) return;
+
+    if (window.scrollY > 300) {
+
+        backToTop.classList.add("active");
+
+    } else {
+
+        backToTop.classList.remove("active");
+
+    }
+
+});
+
+if (backToTop) {
+
+    backToTop.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+}
+
