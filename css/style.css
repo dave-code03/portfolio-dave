@@ -2158,7 +2158,7 @@ header.scrolled{
          BACK TO TOP
 ========================================== */
 
-.back-to-top{
+.backToTop{
 
     position:fixed;
 
@@ -2200,7 +2200,7 @@ header.scrolled{
 
 }
 
-.back-to-top.active{
+.backToTop.active{
 
     opacity:1;
 
@@ -2208,7 +2208,7 @@ header.scrolled{
 
 }
 
-.back-to-top:hover{
+.backToTop:hover{
 
     transform:translateY(-8px);
 
@@ -2216,7 +2216,7 @@ header.scrolled{
 
 }
 
-.back-to-top i{
+.#backToTop i{
 
     pointer-events:none;
 
